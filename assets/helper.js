@@ -73,14 +73,6 @@ const arrayToPhrase = (array) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-const beautifyLink = (string) => {
-  let s = string.trim().replace(/^(?:https?:\/\/)?(?:www\.)?/i, "");
-  s = s.endsWith("/") ? s.slice(0, -1) : s;
-  s = s.split("/");
-  s[0] = `<strong>${s[0]}</strong>`;
-  return s.join("/");
-};
-
 const formatPhone = (string) => {
   if (!string) {
     return null;
@@ -88,11 +80,14 @@ const formatPhone = (string) => {
   return parsePhoneNumberFromString(string).formatInternational();
 };
 
-const validArray = (array) => array !== undefined && array.length > 0;
-
-const parseMarkdown = (string) => {
-  return string;
+const formatLink = (string) => {
+  if (!string) {
+    return null;
+  }
+  return string.replace(/https?:\/\//g, "");
 };
+
+const validArray = (array) => array !== undefined && array.length > 0;
 
 module.exports = {
   mdToHtml,
@@ -105,5 +100,5 @@ module.exports = {
   beautifyLink,
   validArray,
   formatPhone,
-  parseMarkdown,
+  formatLink,
 };

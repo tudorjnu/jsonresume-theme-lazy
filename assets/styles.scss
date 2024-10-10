@@ -2,7 +2,7 @@
 
 @import "scss/common/variables";
 @import "scss/common/mixins";
-@import "scss/common/reset";
+@import "scss/common/normalize";
 @import "scss/common/html";
 @import "scss/common/pdf";
 @import "scss/common/global";
@@ -13,8 +13,4 @@
 @import "scss/education";
 @import "scss/publications";
 @import "scss/work";
-@import "scss/awards";
-@import "scss/certificates";
-@import "scss/languages";
 @import "scss/interests";
-@import "scss/references";

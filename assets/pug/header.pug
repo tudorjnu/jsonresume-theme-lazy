@@ -23,7 +23,7 @@ div(class='header-container padding-bottom-container-2')
     if resume.basics.website
       li(class='profile')
         i(class='fas fa-globe')
-        a(href=resume.basics.website)=resume.basics.website
+        a(href=resume.basics.website)=helper.formatLink(resume.basics.website)
 
     each profile in resume.basics.profiles
       li(class='profile')

@@ -6,7 +6,7 @@ html(lang="en")
       include styles.css
     title=`Resume ${resume.basics.name} – ${resume.basics.label}`
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
-    link(href="https://fonts.googleapis.com/css2?family=Font1&family=Font2&family=Font3&display=swap", rel="stylesheet")
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Font1&family=Font2&family=Font3&display=swap')
   body
     div(class='content')
       include pug/header
@@ -14,8 +14,4 @@ html(lang="en")
       include pug/education
       include pug/publications
       include pug/volunteer
-      include pug/certificates
-      include pug/awards
-      include pug/references
-      include pug/languages
       include pug/interests
