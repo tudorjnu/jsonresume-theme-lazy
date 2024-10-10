@@ -1,13 +1,10 @@
 if helper.validArray(resume.work)
-  div(class='margin-container-2')
-
     div(class='section')
       h3 Work
       hr
-
     div(class='container')
       each work in resume.work
-        div(class="article margin-container-1 no-break work-entry")
+        div(class="article no-break work-entry")
           div(class="date")
             div=helper.calcDate(work.startDate) + " -"
             div=helper.calcDate(work.endDate)

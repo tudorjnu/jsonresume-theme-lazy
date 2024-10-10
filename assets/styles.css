@@ -440,7 +440,13 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.25rem 0 5px 0;
+  margin: 1.25rem 0 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
 }
 
 .margin-container-1:not(:first-child) {
@@ -643,19 +649,18 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "main profiles" "summary skills";
+  grid-template-areas: "title profiles" "summary skills";
   gap: 0 100px;
-  padding: 0px 0px;
 }
-.header-container .main {
-  grid-area: main;
+.header-container .title {
+  grid-area: title;
   align-self: start;
   text-align: left;
 }
-.header-container .main .name {
+.header-container .title .name {
   font-weight: bolder;
 }
-.header-container .main .label {
+.header-container .title .label {
   font-weight: lighter;
 }
 .header-container .summary {
@@ -711,6 +716,7 @@ hr {
   grid-area: date;
 }
 .education-entry .highlights {
+  margin-top: 0.75rem;
   grid-area: highlights;
 }
 .education-entry .courses {
@@ -743,6 +749,7 @@ hr {
   grid-area: publisher;
 }
 .publication-entry .summary {
+  margin-top: 0.75rem;
   grid-area: summary;
   margin-top: 0.5em;
 }
@@ -766,6 +773,7 @@ hr {
   flex-direction: column;
 }
 .work-entry .highlights {
+  margin-top: 0.75rem;
   grid-area: highlights;
 }
 .work-entry .summary {

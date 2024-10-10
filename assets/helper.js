@@ -97,7 +97,6 @@ module.exports = {
   beautifyDate,
   beautifyArray,
   arrayToPhrase,
-  beautifyLink,
   validArray,
   formatPhone,
   formatLink,

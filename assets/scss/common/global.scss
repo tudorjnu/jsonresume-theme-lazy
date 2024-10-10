@@ -75,5 +75,11 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: $font-size-xl 0 5px 0;
+  margin: $font-size-xl 0 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $font-size-sm;
 }

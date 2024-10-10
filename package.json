@@ -1,12 +1,12 @@
 {
   "name": "jsonresume-theme-lazy",
-  "version": "1.0.0",
-  "description": "A jsonresume-theme.",
   "main": "index.js",
   "files": [
     "/assets",
     "index.js"
   ],
+  "version": "1.0.0",
+  "description": "A jsonresume-theme.",
   "scripts": {
     "create-html": "resume export public/resume.html --format html --theme .",
     "create-pdf": "resume export public/resume.pdf --format pdf --theme .",
