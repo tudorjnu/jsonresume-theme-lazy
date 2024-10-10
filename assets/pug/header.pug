@@ -1,0 +1,54 @@
+div(class='header-container padding-bottom-container-2')
+
+  div(class='main')
+    span(class='name text-5xl')=resume.basics.name
+    span(class='label text-3xl')=resume.basics.label
+
+  ul(class='profiles')
+    if resume.basics.location
+      li(class='profile')
+        i(class='fas fa-map-marker-alt')
+        span=helper.calcLocation(resume.basics.location)
+
+    if resume.basics.phone
+      li(class='profile')
+        i(class='fas fa-phone')
+        a(href='tel:' + resume.basics.phone)=helper.formatPhone(resume.basics.phone)
+
+    if resume.basics.email
+      li(class='profile')
+        i(class='fas fa-envelope')
+        a(href='mailto:' + resume.basics.email)=resume.basics.email
+
+    if resume.basics.website
+      li(class='profile')
+        i(class='fas fa-globe')
+        a(href=resume.basics.website)=resume.basics.website
+
+    each profile in resume.basics.profiles
+      li(class='profile')
+        if profile.network == "Github"
+          i(class='fab fa-github')
+          a(href=profile.url)="github.com/" + profile.username
+        else if profile.network == "LinkedIn"
+          i(class='fab fa-linkedin')
+          a(href=profile.url)="linkedin.com/in/" + profile.username
+
+  if helper.validArray(resume.skills)
+    div(class='skills')
+      div(class='section')
+        h3.name Skills
+        hr.line
+      div(class='skills')
+        each skill in resume.skills
+          div(class='skill margin-container-1')
+            p(class="name")= skill.name + ': '
+            if helper.validArray(skill.keywords)
+              p(class="keywords")= skill.keywords.join(', ')
+
+  if resume.basics.summary
+    div(class='summary')
+      div(class='section')
+        h3.name Summary
+        hr.line
+      p=resume.basics.summary

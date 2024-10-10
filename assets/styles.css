@@ -1,0 +1,525 @@
+/* 12px */
+/* 16px */
+/* 14px */
+/* 20px */
+/* 16px */
+/* 24px */
+/* 18px */
+/* 28px */
+/* 20px */
+/* 28px */
+/* 24px */
+/* 32px */
+/* 30px */
+/* 36px */
+/* 36px */
+/* 40px */
+/* 48px */
+/* line-height of 1 */
+/* 60px */
+/* line-height of 1 */
+/* 72px */
+/* line-height of 1 */
+/* 96px */
+/* line-height of 1 */
+/* 128px */
+/* line-height of 1 */
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+span, q {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+@media not print {
+  body {
+    margin: 30px 0 50px 0;
+  }
+}
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0;
+}
+html {
+  font-size: 10pt;
+}
+
+a {
+  color: #0a0a0a;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #707070;
+}
+
+p,
+q {
+  line-height: 1.25em;
+}
+
+li {
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: cm;
+  color: #171717;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+hr {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #404040;
+  color: #404040;
+  align-self: center;
+  margin: 0 0 0 1.875rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.25rem 0 5px 0;
+}
+
+.margin-container-1:not(:first-child) {
+  margin-top: 0.875rem;
+}
+
+.margin-container-2:not(:first-child) {
+  margin-top: 1.125rem;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.padding-container-2 {
+  padding: 20px 0;
+}
+
+.padding-top-container-2 {
+  padding-top: 20px;
+}
+
+.padding-bottom-container-2 {
+  padding-bottom: 20px;
+}
+
+.margin-text-1 {
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
+
+.margin-text-2 {
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
+
+.margin-text-3 {
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
+
+.no-alone-2 {
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder;
+}
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.markdown ul, .markdown ol {
+  margin-left: 20px;
+}
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+.markdown blockquote p {
+  display: inline;
+}
+.markdown code {
+  font-family: monospace;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "main profiles" "summary skills";
+  gap: 0 100px;
+  padding: 0px 0px;
+}
+.header-container .main {
+  grid-area: main;
+  align-self: start;
+  text-align: left;
+}
+.header-container .main .name {
+  font-weight: bolder;
+}
+.header-container .main .label {
+  font-weight: lighter;
+}
+.header-container .summary {
+  align-self: start;
+  grid-area: summary;
+}
+.header-container .profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 20px;
+  align-self: start;
+  grid-area: profiles;
+  list-style: none;
+}
+.header-container .profiles .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.header-container .profiles .profile i {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .profiles .profile a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-container .skill {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto;
+}
+.header-container .skill .name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.header-container .skill .keywords {
+  flex-grow: 1;
+}
+
+.education-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas: "date title institution" "date courses courses" "date highlights highlights";
+  font-size: 1rem;
+}
+.education-entry .date {
+  text-align: left;
+  grid-area: date;
+}
+.education-entry .highlights {
+  grid-area: highlights;
+}
+.education-entry .courses {
+  grid-area: courses;
+}
+.education-entry .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+}
+.education-entry .institution {
+  grid-area: institution;
+  font-weight: lighter;
+}
+
+.publication-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "date title" "date publisher" "date summary";
+  font-size: 1rem;
+}
+.publication-entry .date {
+  text-align: left;
+  grid-area: date;
+}
+.publication-entry .title {
+  grid-area: title;
+}
+.publication-entry .publisher {
+  grid-area: publisher;
+}
+.publication-entry .summary {
+  grid-area: summary;
+  margin-top: 0.5em;
+}
+
+.work-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas: "date title company" "date summary summary" "date highlights highlights";
+  font-size: 1rem;
+}
+.work-entry .date {
+  text-align: left;
+  grid-area: date;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+.work-entry .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+}
+.work-entry .highlights {
+  grid-area: highlights;
+}
+.work-entry .summary {
+  grid-area: summary;
+}
+.work-entry .company {
+  grid-area: company;
+  font-weight: lighter;
+}
+
+.awards .header .title {
+  font-size: 15px;
+}
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.awards .summary {
+  font-size: 14px;
+}
+
+.certificates .certificate {
+  display: grid;
+  grid-template-columns: 100px minmax(110px, max-content) 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "empty name keywords";
+  gap: 20px 20px;
+}
+.certificates .certificate .name {
+  font-weight: bold;
+  margin-right: 10px;
+  grid-area: name;
+}
+.certificates .certificate .issuer {
+  flex-grow: 1;
+  grid-area: keywords;
+}
+
+.languages ul {
+  list-style: none;
+}
+.languages ul li {
+  font-size: 14px;
+}
+
+.interests .interest {
+  display: grid;
+  grid-template-columns: 100px 200px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "empty name keywords";
+}
+.interests .interest .name {
+  font-weight: bold;
+  margin-right: 10px;
+  grid-area: name;
+  text-align: left;
+}
+.interests .interest .keywords {
+  flex-grow: 1;
+  grid-area: keywords;
+}
+
+.references .name {
+  font-size: 15px;
+}
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
+}

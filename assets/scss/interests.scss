@@ -1,0 +1,20 @@
+.interests {
+  .interest {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr; // First column fixed, second auto-sizing, third fills remaining space
+    grid-template-rows: auto;
+    grid-template-areas: "empty name keywords";
+
+    .name {
+      font-weight: bold;
+      margin-right: $space-1;
+      grid-area: name;
+      text-align: left;
+    }
+
+    .keywords {
+      flex-grow: 1;
+      grid-area: keywords;
+    }
+  }
+}

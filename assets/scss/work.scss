@@ -1,0 +1,40 @@
+@use "sass:color";
+
+.work-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas:
+    "date title company"
+    "date summary summary"
+    "date highlights highlights";
+
+  font-size: $font-size-base;
+
+  .date {
+    text-align: left;
+    grid-area: date;
+    font-weight: lighter;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .highlights {
+    grid-area: highlights;
+  }
+
+  .summary {
+    grid-area: summary;
+  }
+
+  .company {
+    grid-area: company;
+    font-weight: lighter;
+  }
+}

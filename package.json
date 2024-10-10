@@ -1,0 +1,48 @@
+{
+  "name": "jsonresume-theme-lazy",
+  "version": "1.0.0",
+  "description": "A jsonresume-theme.",
+  "main": "index.js",
+  "files": [
+    "/assets",
+    "index.js"
+  ],
+  "scripts": {
+    "create-html": "resume export public/resume.html --format html --theme .",
+    "create-pdf": "resume export public/resume.pdf --format pdf --theme .",
+    "create-docs": "resume export docs/resume_extended.pdf --resume public/resume_extended.json --format pdf --theme . && resume export docs/resume_simple.pdf --resume public/resume_simple.json --format pdf --theme .",
+    "validate": "resume test",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "gulp": "gulp",
+    "gulp:css": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tudorjnu/jsonresume-theme-lazy.git"
+  },
+  "keywords": [
+    "jsonresume",
+    "resume"
+  ],
+  "author": "Tudor Jianu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tudorjnu/jsonresume-theme-lazy/issues"
+  },
+  "homepage": "https://github.com/tudorjnu/jsonresume-theme-lazy#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.4"
+  },
+  "dependencies": {
+    "iso-3166-1": "^2.1.1",
+    "libphonenumber-js": "^1.11.11",
+    "markdown-it": "^14.1.0",
+    "moment": "^2.30.1",
+    "pug": "^3.0.3"
+  }
+}

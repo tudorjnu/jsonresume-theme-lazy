@@ -1,0 +1,538 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>/* 12px */
+/* 16px */
+/* 14px */
+/* 20px */
+/* 16px */
+/* 24px */
+/* 18px */
+/* 28px */
+/* 20px */
+/* 28px */
+/* 24px */
+/* 32px */
+/* 30px */
+/* 36px */
+/* 36px */
+/* 40px */
+/* 48px */
+/* line-height of 1 */
+/* 60px */
+/* line-height of 1 */
+/* 72px */
+/* line-height of 1 */
+/* 96px */
+/* line-height of 1 */
+/* 128px */
+/* line-height of 1 */
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+span, q {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+@media not print {
+  body {
+    margin: 30px 0 50px 0;
+  }
+}
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0;
+}
+html {
+  font-size: 10pt;
+}
+
+a {
+  color: #0a0a0a;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #707070;
+}
+
+p,
+q {
+  line-height: 1.25em;
+}
+
+li {
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: cm;
+  color: #171717;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+hr {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #404040;
+  color: #404040;
+  align-self: center;
+  margin: 0 0 0 1.875rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.25rem 0 5px 0;
+}
+
+.margin-container-1:not(:first-child) {
+  margin-top: 0.875rem;
+}
+
+.margin-container-2:not(:first-child) {
+  margin-top: 1.125rem;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.padding-container-2 {
+  padding: 20px 0;
+}
+
+.padding-top-container-2 {
+  padding-top: 20px;
+}
+
+.padding-bottom-container-2 {
+  padding-bottom: 20px;
+}
+
+.margin-text-1 {
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
+
+.margin-text-2 {
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
+
+.margin-text-3 {
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
+
+.no-alone-2 {
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder;
+}
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.markdown ul, .markdown ol {
+  margin-left: 20px;
+}
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+.markdown blockquote p {
+  display: inline;
+}
+.markdown code {
+  font-family: monospace;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "main profiles" "summary skills";
+  gap: 0 100px;
+  padding: 0px 0px;
+}
+.header-container .main {
+  grid-area: main;
+  align-self: start;
+  text-align: left;
+}
+.header-container .main .name {
+  font-weight: bolder;
+}
+.header-container .main .label {
+  font-weight: lighter;
+}
+.header-container .summary {
+  align-self: start;
+  grid-area: summary;
+}
+.header-container .profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 20px;
+  align-self: start;
+  grid-area: profiles;
+  list-style: none;
+}
+.header-container .profiles .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.header-container .profiles .profile i {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .profiles .profile a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-container .skill {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto;
+}
+.header-container .skill .name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.header-container .skill .keywords {
+  flex-grow: 1;
+}
+
+.education-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas: "date title institution" "date courses courses" "date highlights highlights";
+  font-size: 1rem;
+}
+.education-entry .date {
+  text-align: left;
+  grid-area: date;
+}
+.education-entry .highlights {
+  grid-area: highlights;
+}
+.education-entry .courses {
+  grid-area: courses;
+}
+.education-entry .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+}
+.education-entry .institution {
+  grid-area: institution;
+  font-weight: lighter;
+}
+
+.publication-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "date title" "date publisher" "date summary";
+  font-size: 1rem;
+}
+.publication-entry .date {
+  text-align: left;
+  grid-area: date;
+}
+.publication-entry .title {
+  grid-area: title;
+}
+.publication-entry .publisher {
+  grid-area: publisher;
+}
+.publication-entry .summary {
+  grid-area: summary;
+  margin-top: 0.5em;
+}
+
+.work-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-areas: "date title company" "date summary summary" "date highlights highlights";
+  font-size: 1rem;
+}
+.work-entry .date {
+  text-align: left;
+  grid-area: date;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+.work-entry .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+}
+.work-entry .highlights {
+  grid-area: highlights;
+}
+.work-entry .summary {
+  grid-area: summary;
+}
+.work-entry .company {
+  grid-area: company;
+  font-weight: lighter;
+}
+
+.awards .header .title {
+  font-size: 15px;
+}
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.awards .summary {
+  font-size: 14px;
+}
+
+.certificates .certificate {
+  display: grid;
+  grid-template-columns: 100px minmax(110px, max-content) 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "empty name keywords";
+  gap: 20px 20px;
+}
+.certificates .certificate .name {
+  font-weight: bold;
+  margin-right: 10px;
+  grid-area: name;
+}
+.certificates .certificate .issuer {
+  flex-grow: 1;
+  grid-area: keywords;
+}
+
+.languages ul {
+  list-style: none;
+}
+.languages ul li {
+  font-size: 14px;
+}
+
+.interests .interest {
+  display: grid;
+  grid-template-columns: 100px 200px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "empty name keywords";
+}
+.interests .interest .name {
+  font-weight: bold;
+  margin-right: 10px;
+  grid-area: name;
+  text-align: left;
+}
+.interests .interest .keywords {
+  flex-grow: 1;
+  grid-area: keywords;
+}
+
+.references .name {
+  font-size: 15px;
+}
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
+}</style><title>Resume Tudor Jianu – PhD Student of Artificial Intelligence in Medical Robotics</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Font1&amp;family=Font2&amp;family=Font3&amp;display=swap" rel="stylesheet"></head><body><div class="content"><div class="header-container padding-bottom-container-2"><div class="main"><span class="name text-5xl">Tudor Jianu</span><span class="label text-3xl">PhD Student of Artificial Intelligence in Medical Robotics</span></div><ul class="profiles"><li class="profile"><i class="fas fa-map-marker-alt"></i><span>Liverpool, UK</span></li><li class="profile"><i class="fas fa-phone"></i><a href="tel:+447557642684">+44 7557 642684</a></li><li class="profile"><i class="fas fa-envelope"></i><a href="mailto:tudorjnu@gmail.com">tudorjnu@gmail.com</a></li><li class="profile"><i class="fas fa-globe"></i><a href="https://tudorjnu.github.io">https://tudorjnu.github.io</a></li><li class="profile"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/tudorjnu/">linkedin.com/in/tudorjnu</a></li><li class="profile"><i class="fab fa-github"></i><a href="github.com/tudorjnu/">github.com/tudorjnu</a></li></ul><div class="skills"><div class="section"><h3 class="name">Skills</h3><hr class="line"></div><div class="skills"><div class="skill margin-container-1"><p class="name">Technical Skills: </p><p class="keywords">Machine Learning, Algorithms, Data Mining, Data Visualization, Artificial Intelligence, Database Systems</p></div><div class="skill margin-container-1"><p class="name">Soft Skills: </p><p class="keywords">Planning, Problem-Soving, Collaboration, Communication, Active Learning, Innovation, Mentoring, Leadership, Responsibility</p></div><div class="skill margin-container-1"><p class="name">Programming Languages: </p><p class="keywords">Python, Ruby, SML, Bash, HTML, CSS, SQL, JavaScript</p></div><div class="skill margin-container-1"><p class="name">Tools: </p><p class="keywords">VIM, Docker, Linux, Git, Jupyter Notebooks</p></div></div></div><div class="summary"><div class="section"><h3 class="name">Summary</h3><hr class="line"></div><p>Tudor Jianu completed an MSc in Data Science and Artificial Intelligence at the University of Liverpool and is currently working towards a PhD in Artificial Intelligence focused on medical robotics. Specializes in research areas that include autonomous navigation in endovascular procedures. Beyond the academic sphere, shows a strong inclination for creating clean software solutions. Thrives in fast-paced, innovative environments committed to pushing the boundaries of medical technology.</p></div></div><div class="margin-container-2"><div class="section"><h3>Work</h3><hr></div><div class="container"><div class="article margin-container-1 no-break work-entry"><div class="date"><div>Oct 2021 -</div><div>Present</div></div><h4 class="title">PhD Researcher</h4><span class="company"><a href="https://www.liverpool.ac.uk">University of Liverpool</a></span><p class="summary">Pursuing a Ph.D. in autonomous endovascular navigation, Tudor excels in integrating deep learning, software development, and data science. Engineered an endovascular simulator using Python and MuJoCo, demonstrating expertise in areas like reinforcement learning and neural networks. Notable for problem-solving and team collaboration skills, which extend to mentoring and conducting AI workshops.</p><ul class="highlights margin-text-4 no-break"><li><p>Developed an <strong>endovascular simulator</strong>, CathSim, using Python</p>
+</li><li><p>Deployed scripts on HPC's (Barkla)</p>
+</li><li><p>Researched and applied state-of-the-art neural network architectures</p>
+</li><li><p>Created an autonomous agent capable of performing endovascular navigation tasks</p>
+</li><li><p>Presented at the Hamlyn Symposium of Medical Robotics</p>
+</li><li><p>Supervised and guided trainee researchers, providing essential technical advice to foster academic development</p>
+</li><li><p>Developed demonstrations for SmartLab using industrial manipulators (UR5) and instance segmentation networks (Mask-RCNN)</p>
+</li></ul></div><div class="article margin-container-1 no-break work-entry"><div class="date"><div>Oct 2021 -</div><div>Present</div></div><h4 class="title">Team Member</h4><span class="company"><a href="https://outreach.csc.liv.ac.uk">University of Liverpool CS Outreach</a></span><p class="summary">The Department of Computer Science at the University of Liverpool actively engages in educational outreach programs to promote computer science. In collaboration with the Electrical Engineering and Electronics department, a range of events and resources are offered to schools and the general public.</p><ul class="highlights margin-text-4 no-break"><li><p>Delivered an Introduction to Programming Workshop at Liverpool World Museum using Pi2Go robots</p>
+</li><li><p>Participated in continuous improvement by generating suggestions, engaging in problem-solving activities to support teamwork.</p>
+</li><li><p>Generated ideas while working in a small team to produce activities for a series of fun and engaging events to market the university</p>
+</li><li><p>Developed an Introduction to Machine Learning activity as part of Computer Science Summer School activities.</p>
+</li><li><p>Created Machine Learning activities by modifying TypeScript and HTML code</p>
+</li><li><p>Created various educational activities for the Computer Science Department</p>
+</li></ul></div></div></div><div class="margin-container-2"><div class="section"><h3>Education</h3><hr></div><div class="container"><div class="education-entry article margin-container-1 no-break"><div class="date"><div>Oct 2021 -</div><div>Present</div></div><h4 class="title">PhD in Computer Science</h4><span class="institution"><a href="https://www.coventry.ac.uk/">University of Liverpool</a></span><div class="courses"></div><ul class="highlights margin-text-4 no-break"><li>Distinguished expertise in deep learning methodologies, including convolutional neural networks, multi-layer perceptrons, and transformers.</li><li>Contributed to the development of a sim-to-xray image mapping network.</li><li>Actively participated in mentoring and supervising master's students during their thesis work.</li><li>Conducted workshops on AI and Deep Learning as part of the outreach group.</li><li>Presented work at the esteemed Hamlyn Symposium within the Recent Advances in Autonomous Surgery workshop.</li></ul></div><div class="education-entry article margin-container-1 no-break"><div class="date"><div>Sep 2020 -</div><div>Sep 2021</div></div><h4 class="title">Masters of Science in Computer Science</h4><span class="institution"><a href="https://www.liverpool.ac.uk">University of Liverpool</a></span><div class="courses"><p><strong>Courses: </strong>COMP516 - Research Methods in Computer Science, COMP517 - Programming Fundamentals, COMP518 - Database and Information Systems, COMP533 - Maths and Statistics for AI and Data Science, COMP527 - Data Mining and Visualisation, COMP532 - Machine Learning and BioInspired Optimisation, COMP534 - Applied Artificial Intelligence, COMP575 - Computational Intelligence, COMP702 - MSc Project</p></div></div><div class="education-entry article margin-container-1 no-break"><div class="date"><div>Sep 2017 -</div><div>Aug 2021</div></div><h4 class="title">Bachelours of Arts in Business Administration</h4><span class="institution"><a href="https://www.coventry.ac.uk/">Coventry University</a></span><div class="courses"><p><strong>Courses: </strong>A106MC - Design Your Own Project, 110SAM - Internal Business Relations, 148HRM - Managing People, 105MKT - Marketing Essentials, 108SAM - Quantitative Methods for Business, 117ECN - The Economic Environment of Business, 120SAM - Continuing Professional Development 1, 2000ACC - Principles of Business Accounting, 240SAM - Supply Chain and Operations Management, A203IAE - Making Money On-Line, 211MKT - Buyer Behaviour, 220SAM - Continuing Professional Development 2, 247SAM - Exploring Business Strategy, 251FIN - Introduction to Financial Services, 344SAM - Project Management, 361SAM - Contemporary Business Strategy, A320DEL - Absolute Beginners' German 3, 320SSL - Continuing Professional Development 3, 348SAM - Managing Change, 352SAM - Business Dissertation, 353FIN - International Finance</p></div></div></div></div><div class="margin-container-2"><div class="section"><h3>Publications</h3><hr></div><div class="container"><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">Jan 2024</span><h4 class="title">Autonomous Catheterization with Open-source Simulator and Expert Trajectory</h4><span class="publisher"><a href="https://arxiv.org/abs/2401.09059">arXiv preprint arXiv:2401.09059</a></span><p class="summary">Developed and introduced CathSim, the first open-source simulator for endovascular intervention, addressing limitations in autonomous catheterization research. Validated the simulator against real robotic systems and demonstrated its effectiveness in training machine learning algorithms for endovascular navigation tasks. The work accelerates research in autonomous catheterization by providing a cost-effective and accessible tool for real-time performance testing and algorithm development.</p></div></div><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">Nov 2023</span><h4 class="title">3D Guidewire Shape Reconstruction from Monoplane Fluoroscopic Images</h4><span class="publisher"><a href="https://arxiv.org/abs/2311.11209">arXiv preprint arXiv:2311.11209</a></span><p class="summary">We propose a novel method to reconstruct 3D shapes from monoplane fluoroscopic images, achieving state-of-the-art results on the 3D Guidewire dataset.</p></div></div><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">Aug 2022</span><h4 class="title">Cathsim: An open-source simulator for autonomous cannulation</h4><span class="publisher"><a href="https://arxiv.org/abs/2208.01455">arXiv preprint arXiv:2208.01455</a></span><p class="summary">An open-source simulator has been introduced to advance machine learning for autonomous endovascular navigation, offering high-fidelity catheter and aorta simulation with real-time force feedback.</p></div></div><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">Apr 2023</span><h4 class="title">Translating Simulation Images to X-ray Images via Multi-Scale Semantic Matching</h4><span class="publisher"><a href="https://arxiv.org/abs/2304.07693">arXiv preprint arXiv:2304.07693</a></span><p class="summary">A new method is proposed to convert endovascular simulator images to X-ray-like images, emphasizing structural integrity through multi-scale semantic matching, outperforming existing techniques and accompanied by a new benchmark dataset and open-source code.</p></div></div><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">Apr 2023</span><h4 class="title">Unsupervised Adversarial Domain Adaptation for Sim-to-Real Transfer of Tactile Images</h4><span class="publisher"><a href="https://ieeexplore.ieee.org/abstract/document/10106009">IEEE Transactions on Instrumentation and Measurement</a></span><p class="summary">ACTNet, an unsupervised adversarial network, is proposed for tactile image transfer, using correlative attention and task-related constraints to enhance sim-to-real transfer, achieving 92.85% accuracy in real-world classification without real labels.</p></div></div><div class="article margin-container-1 no-break"><div class="publication-entry"><span class="date">May 2022</span><h4 class="title">Reducing tactile sim2real domain gaps via deep texture generation networks</h4><span class="publisher"><a href="https://ieeexplore.ieee.org/abstract/document/9811801">International Conference on Robotics and Automation (ICRA)</a></span><p class="summary">Engineered a neural network that synthesizes realistic textures on simulated tactile images, targeting only contact areas to enhance realism and reduce the Sim2Real accuracy gap in robotic sensing tasks.</p></div></div></div></div><div class="margin-container-4"><div class="section"><h3 class="name">Volunteering</h3><hr class="line"></div><div class="container"><div class="article margin-container-3"><div class="work-entry"><span class="date">Sep 2020 - Sep 2021</span><h4 class="title">President of Data Science and Artificial Intelligence (DSAI) Society</h4><span class="company">University of Liverpool</span><p class="summary">Established the society</p><ul class="highlights margin-text-4 no-break"><li>Organized Data Science networking and training events;</li><li>Set aims and objectives in order to improve the society while securing the commitment of others;</li><li>Built the committee for the society, advertised roles and advocated conflicts</li></ul></div></div><div class="article margin-container-3"><div class="work-entry"><span class="date">Sep 2020 - Sep 2021</span><h4 class="title">Course Representative</h4><span class="company">University of Liverpool</span><p class="summary">Representative of Data Science and Artificial Intelligence MSc students</p><ul class="highlights margin-text-4 no-break"><li>Gathered information from the students by asking open questions to better understand the views in order to improve the course</li><li>Participated in meetings throughout the year, supported the opinions of the students and raised and complains to the department as well as offered tentative solutions to the issues.</li></ul></div></div></div></div><div class="margin-container-2"><div class="section"><h3>Interests</h3><hr></div><div class="interests"><div class="interest margin-container-1"><p class="name">Sports &amp; Fitness: </p><p class="keywords">Bouldering, Gymnastic Rings, Hiking, Calisthenics, Sports Nutrition, Mesocycle Programming</p></div><div class="interest margin-container-1"><p class="name">Technology: </p><p class="keywords">Linux Configuration, Neovim Customization, Tiling Window Manager, Ergonomic Keyboards, Web Development, Automation Scripting</p></div><div class="interest margin-container-1"><p class="name">Finance &amp; Budgeting: </p><p class="keywords">Personal Budgeting, Minimalist Budgeting, Investment Strategies, Financial Independence, Expense Tracking</p></div><div class="interest margin-container-1"><p class="name">Minimalism &amp; Sustainable Living: </p><p class="keywords">Minimalist Living, Waste Reduction, Sustainable Consumption, Mindful Purchasing, Capsule Wardrobe</p></div><div class="interest margin-container-1"><p class="name">Reading &amp; Personal Development: </p><p class="keywords">Scientific Literature, Self-Improvement, Audiobooks, Meditation, Cognitive Optimization</p></div></div></div></div></body></html>

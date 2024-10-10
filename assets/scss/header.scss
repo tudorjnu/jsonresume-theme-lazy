@@ -1,0 +1,75 @@
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "main profiles"
+    "summary skills";
+
+  gap: 0 100px;
+  padding: 0px 0px;
+
+  .main {
+    grid-area: main;
+    align-self: start;
+    text-align: left;
+
+    .name {
+      font-weight: bolder;
+    }
+
+    .label {
+      font-weight: lighter;
+    }
+  }
+
+  .summary {
+    align-self: start;
+    grid-area: summary;
+  }
+
+  .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px 20px;
+
+    align-self: start;
+    grid-area: profiles;
+    list-style: none;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+
+      i {
+        display: flex;
+        font-size: $font-size-2xl;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .skill {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto;
+
+    .name {
+      font-weight: bold;
+      margin-right: $space-1;
+    }
+
+    .keywords {
+      flex-grow: 1;
+    }
+  }
+}
