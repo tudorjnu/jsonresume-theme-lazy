@@ -368,7 +368,7 @@ template {
   margin: 15mm 0 20mm 0;
 }
 html {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 a {
@@ -726,6 +726,8 @@ hr {
   grid-area: title;
   display: flex;
   flex-direction: column;
+  width: 600px;
+  text-align: left;
 }
 .education-entry .institution {
   grid-area: institution;

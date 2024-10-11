@@ -1,4 +1,7 @@
-const md = require("markdown-it")();
+const md = require("markdown-it")({
+  typographer: true,
+  html: true,
+}).enable(["link"]);
 const { parsePhoneNumberFromString } = require("libphonenumber-js");
 const iso = require("iso-3166-1");
 const moment = require("moment");
@@ -89,6 +92,10 @@ const formatLink = (string) => {
 
 const validArray = (array) => array !== undefined && array.length > 0;
 
+const parseModules = (modules) => {
+  return modules;
+};
+
 module.exports = {
   mdToHtml,
   calcLocation,
@@ -100,4 +107,5 @@ module.exports = {
   validArray,
   formatPhone,
   formatLink,
+  parseModules,
 };

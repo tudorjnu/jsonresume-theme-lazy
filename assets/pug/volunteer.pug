@@ -14,4 +14,4 @@ if helper.validArray(resume.work)
             if helper.validArray(vol.highlights)
               ul(class='highlights margin-text-4 no-break')
                 each highlight in vol.highlights
-                  li=highlight
+                  li!=helper.mdToHtml(highlight)
