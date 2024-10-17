@@ -1,0 +1,25 @@
+@use "sass:color";
+
+.certificate-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr 400px;
+  grid-template-areas:
+    "date title"
+    "date issuer";
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  .date {
+    text-align: left;
+    grid-area: date;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .issuer {
+    grid-area: issuer;
+    text-align: right;
+  }
+}

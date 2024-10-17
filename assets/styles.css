@@ -401,6 +401,8 @@ li:first-child {
   font-family: cm;
   color: #171717;
   text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h2 {
@@ -417,7 +419,7 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
-  line-height: 1.75rem;
+  /* line-height: $line-height-lg; */
   font-weight: bold;
 }
 
@@ -650,7 +652,7 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title profiles" "summary skills";
-  gap: 0 100px;
+  gap: 0 30px;
 }
 .header-container .title {
   grid-area: title;
@@ -672,9 +674,11 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 10px 20px;
+  align-items: stretch;
   align-self: start;
   grid-area: profiles;
   list-style: none;
+  font-size: 1rem;
 }
 .header-container .profiles .profile {
   display: flex;
@@ -739,10 +743,13 @@ hr {
   grid-template-columns: 100px 1fr;
   grid-template-areas: "date title" "date publisher" "date summary";
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 .publication-entry .date {
   text-align: left;
   grid-area: date;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .publication-entry .title {
   grid-area: title;
@@ -773,6 +780,8 @@ hr {
   grid-area: title;
   display: flex;
   flex-direction: column;
+  width: 600px;
+  text-align: left;
 }
 .work-entry .highlights {
   margin-top: 0.75rem;
@@ -784,6 +793,25 @@ hr {
 .work-entry .company {
   grid-area: company;
   font-weight: lighter;
+}
+
+.certificate-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr 400px;
+  grid-template-areas: "date title" "date issuer";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.certificate-entry .date {
+  text-align: left;
+  grid-area: date;
+}
+.certificate-entry .title {
+  grid-area: title;
+}
+.certificate-entry .issuer {
+  grid-area: issuer;
+  text-align: right;
 }
 
 .interests .interest {

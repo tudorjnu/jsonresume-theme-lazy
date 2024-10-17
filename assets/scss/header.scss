@@ -6,7 +6,7 @@
     "title profiles"
     "summary skills";
 
-  gap: 0 100px;
+  gap: 0 30px;
 
   .title {
     grid-area: title;
@@ -33,9 +33,11 @@
     grid-template-rows: auto;
     gap: 10px 20px;
 
+    align-items: stretch;
     align-self: start;
     grid-area: profiles;
     list-style: none;
+    font-size: $font-size-base;
 
     .profile {
       display: flex;

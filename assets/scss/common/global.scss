@@ -36,6 +36,8 @@ li {
   font-family: cm;
   color: $neutral-900;
   text-align: justify;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
 }
 
 h2 {
@@ -52,7 +54,7 @@ h3 {
 
 h4 {
   font-size: $font-size-lg;
-  line-height: $line-height-lg;
+  /* line-height: $line-height-lg; */
   font-weight: bold;
 }
 
