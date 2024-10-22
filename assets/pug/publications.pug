@@ -5,11 +5,10 @@ if helper.validArray(resume.publications)
       hr
     div(class='container')
       each publication in resume.publications
-        div(class='article margin-container-1 no-break')
-          div(class='publication-entry')
-            span(class="date")= helper.calcDate(publication.releaseDate)
-            h4(class="title")=publication.name
-            span(class="publisher")
-              a(href=publication.website)=publication.publisher
-            p(class="summary")=publication.summary
+        div(class=' article publication-entry no-break')
+          span(class="date")= helper.calcDate(publication.releaseDate)
+          h4(class="title")=publication.name
+          span(class="publisher")
+            a(href=publication.website)=publication.publisher
+          p(class="summary")=publication.summary
 

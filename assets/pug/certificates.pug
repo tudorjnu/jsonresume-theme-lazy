@@ -5,7 +5,7 @@ if helper.validArray(resume.certificates)
       hr
     div(class='container')
       each certificate in resume.certificates
-        div(class='article margin-container-1 no-break')
+        div(class='article no-break')
           div(class='publication-entry')
             span(class="date")= helper.calcDate(certificate.date)
             h4(class="title")=certificate.name

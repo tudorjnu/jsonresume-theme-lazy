@@ -1,17 +1,18 @@
 if helper.validArray(resume.work)
-  div(class='margin-container-4')
-    div(class='section')
-      h3.name Volunteering
-      hr.line
-    div(class='container')
-      each vol in resume.volunteer
-        div(class='article margin-container-3')
-          div(class="work-entry")
-            span(class="date")= helper.calcDateRange(vol.startDate, vol.endDate)
-            h4(class="title")= vol.position
-            span(class="company")=vol.organization
-            p(class="summary")=vol.summary
-            if helper.validArray(vol.highlights)
-              ul(class='highlights margin-text-4 no-break')
-                each highlight in vol.highlights
-                  li!=helper.mdToHtml(highlight)
+  div(class='section')
+    h3.name Volunteering
+    hr.line
+  div(class='container')
+    each vol in resume.volunteer
+      div(class='article no-break work-entry')
+        div(class="date")
+          div=helper.calcDate(vol.startDate) + " -"
+          div=helper.calcDate(vol.endDate)
+        h4(class="title")= vol.position
+        span(class="company")
+          a(href=vol.url)=vol.company
+        p(class="summary")=vol.summary
+        if helper.validArray(vol.highlights)
+          ul(class='highlights margin-text-4 no-break')
+            each highlight in vol.highlights
+              li!=helper.mdToHtml(highlight)
