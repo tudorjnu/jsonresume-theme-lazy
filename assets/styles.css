@@ -661,9 +661,14 @@ hr {
 }
 .header-container .title .name {
   font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
 }
 .header-container .title .label {
   font-weight: lighter;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .header-container .summary {
   align-self: start;
@@ -673,9 +678,9 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 10px 20px;
+  column-gap: 20px;
   align-items: stretch;
-  align-self: start;
+  align-self: stretch;
   grid-area: profiles;
   list-style: none;
   font-size: 1rem;
@@ -688,7 +693,7 @@ hr {
 }
 .header-container .profiles .profile i {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -707,6 +712,7 @@ hr {
 }
 .header-container .skill .keywords {
   flex-grow: 1;
+  text-align: left;
 }
 
 .education-entry {
@@ -730,7 +736,7 @@ hr {
   grid-area: title;
   display: flex;
   flex-direction: column;
-  width: 600px;
+  margin-right: 20px;
   text-align: left;
 }
 .education-entry .institution {
@@ -773,14 +779,12 @@ hr {
   text-align: left;
   grid-area: date;
   font-weight: lighter;
-  display: flex;
-  flex-direction: column;
 }
 .work-entry .title {
   grid-area: title;
   display: flex;
   flex-direction: column;
-  width: 600px;
+  margin-right: 1rem;
   text-align: left;
 }
 .work-entry .highlights {
@@ -829,4 +833,5 @@ hr {
 .interests .interest .keywords {
   flex-grow: 1;
   grid-area: keywords;
+  text-align: left;
 }

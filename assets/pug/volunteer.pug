@@ -6,11 +6,12 @@ if helper.validArray(resume.work)
     each vol in resume.volunteer
       div(class='article no-break work-entry')
         div(class="date")
-          div=helper.calcDate(vol.startDate) + " -"
-          div=helper.calcDate(vol.endDate)
+          | #{helper.calcDate(vol.startDate)} -
+          br
+          | #{helper.calcDate(vol.endDate)}
         h4(class="title")= vol.position
         span(class="company")
-          a(href=vol.url)=vol.company
+          a(href=vol.url)=vol.organization
         p(class="summary")=vol.summary
         if helper.validArray(vol.highlights)
           ul(class='highlights margin-text-4 no-break')

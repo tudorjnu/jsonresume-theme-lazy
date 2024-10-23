@@ -7,8 +7,9 @@ if helper.validArray(resume.education)
       each edu in resume.education
         div(class='education-entry article margin-container-1 no-break')
           div(class="date")
-            div=helper.calcDate(edu.startDate) + " -"
-            div=helper.calcDate(edu.endDate)
+            | #{helper.calcDate(edu.startDate)} -
+            br
+            | #{helper.calcDate(edu.endDate)}
           h4(class="title")= edu.studyType + " in " + edu.area
           span(class="institution")
             a(href=edu.url)=edu.institution

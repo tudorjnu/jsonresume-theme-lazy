@@ -15,10 +15,15 @@
 
     .name {
       font-weight: bolder;
+      font-size: $font-size-5xl;
+      line-height: $line-height-5xl;
+      margin-bottom: $font-size-xs;
     }
 
     .label {
       font-weight: lighter;
+      font-size: $font-size-3xl;
+      line-height: $line-height-3xl;
     }
   }
 
@@ -31,10 +36,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 10px 20px;
+    column-gap: 20px;
 
     align-items: stretch;
-    align-self: start;
+    align-self: stretch;
     grid-area: profiles;
     list-style: none;
     font-size: $font-size-base;
@@ -47,7 +52,7 @@
 
       i {
         display: flex;
-        font-size: $font-size-2xl;
+        font-size: $font-size-base;
         justify-content: center;
         align-items: center;
       }
@@ -71,6 +76,7 @@
 
     .keywords {
       flex-grow: 1;
+      text-align: left;
     }
   }
 }

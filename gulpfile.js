@@ -12,9 +12,7 @@ function css() {
 }
 
 function html() {
-  const resume = JSON.parse(
-    fs.readFileSync("./resumes/research.json", "utf-8"),
-  );
+  const resume = JSON.parse(fs.readFileSync("./resumes/cv.json", "utf-8"));
   const modules = JSON.parse(fs.readFileSync("./resumes/modules.json"));
 
   // if (helper.validArray(modules.masters)) console.log(modules.masters);

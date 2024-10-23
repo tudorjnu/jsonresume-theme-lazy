@@ -6,8 +6,9 @@ if helper.validArray(resume.work)
       each work in resume.work
         div(class="article no-break work-entry")
           div(class="date")
-            div=helper.calcDate(work.startDate) + " -"
-            div=helper.calcDate(work.endDate)
+            | #{helper.calcDate(work.startDate)} -
+            br
+            | #{helper.calcDate(work.endDate)}
           h4(class="title")=work.position
           span(class="company")
             a(href=work.url)=work.company

@@ -14,16 +14,13 @@
     text-align: left;
     grid-area: date;
     font-weight: lighter;
-
-    display: flex;
-    flex-direction: column;
   }
 
   .title {
     grid-area: title;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    margin-right: 1rem;
     text-align: left;
   }
 
