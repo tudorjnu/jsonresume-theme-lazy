@@ -668,6 +668,7 @@ hr {
   font-weight: lighter;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  margin-top: 0.5em;
 }
 .header-container .summary {
   align-self: start;
