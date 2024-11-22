@@ -32,7 +32,7 @@ div(class='header-container')
           a(href=profile.url)="github.com/" + profile.username
         else if profile.network == "LinkedIn"
           i(class='fab fa-linkedin')
-          a(href=profile.url)="linkedin.com/in/" + profile.username
+          a(href=profile.url)= profile.username
 
   if helper.validArray(resume.skills)
     div(class='skills')
