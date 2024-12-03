@@ -363,6 +363,14 @@ template {
     margin: 30px 0 50px 0;
   }
 }
+@media print {
+  .no-break {
+    break-inside: avoid;
+  }
+  .section {
+    break-after: avoid;
+  }
+}
 @page {
   size: A4;
   margin: 15mm 0 20mm 0;
@@ -398,7 +406,7 @@ li:first-child {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: cm;
+  font-family: "Times New Roman", "Arial", "Roboto", Times, serif;
   color: #171717;
   text-align: justify;
   font-size: 1rem;
@@ -419,7 +427,6 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
-  /* line-height: $line-height-lg; */
   font-weight: bold;
 }
 
@@ -665,7 +672,6 @@ hr {
   line-height: 1;
 }
 .header-container .title .label {
-  font-weight: lighter;
   font-size: 1.875rem;
   line-height: 2.25rem;
   margin-top: 0.5em;
@@ -741,13 +747,12 @@ hr {
 }
 .education-entry .institution {
   grid-area: institution;
-  font-weight: lighter;
 }
 
 .publication-entry {
   display: grid;
   grid-template-columns: 100px 1fr;
-  grid-template-areas: "date title" "date publisher" "date summary";
+  grid-template-areas: "date title" "date authors" "date publisher" "date summary";
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -762,6 +767,13 @@ hr {
 }
 .publication-entry .publisher {
   grid-area: publisher;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.publication-entry .authors {
+  grid-area: authors;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .publication-entry .summary {
   margin-top: 0.75rem;
@@ -774,11 +786,11 @@ hr {
   grid-template-columns: 100px 1fr auto;
   grid-template-areas: "date title company" "date summary summary" "date highlights highlights";
   font-size: 1rem;
+  break-inside: avoid;
 }
 .work-entry .date {
   text-align: left;
   grid-area: date;
-  font-weight: lighter;
 }
 .work-entry .title {
   grid-area: title;
@@ -796,7 +808,9 @@ hr {
 }
 .work-entry .company {
   grid-area: company;
-  font-weight: lighter;
+}
+.work-entry:last-child {
+  margin-top: 0.875rem;
 }
 
 .certificate-entry {

@@ -2,10 +2,9 @@ if helper.validArray(resume.education)
     div(class='section')
       h3 Education
       hr
-
     div(class='container')
       each edu in resume.education
-        div(class='education-entry article margin-container-1 no-break')
+        div(class='education-entry margin-container-1 no-break')
           div(class="date")
             | #{helper.calcDate(edu.startDate)} -
             br

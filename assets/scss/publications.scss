@@ -5,6 +5,7 @@
   grid-template-columns: 100px 1fr;
   grid-template-areas:
     "date title"
+    "date authors"
     "date publisher"
     "date summary";
 
@@ -24,6 +25,14 @@
 
   .publisher {
     grid-area: publisher;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  .authors {
+    grid-area: authors;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
   }
 
   .summary {

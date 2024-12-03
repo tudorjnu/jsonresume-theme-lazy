@@ -9,11 +9,11 @@
     "date highlights highlights";
 
   font-size: $font-size-base;
+  break-inside: avoid;
 
   .date {
     text-align: left;
     grid-area: date;
-    font-weight: lighter;
   }
 
   .title {
@@ -35,6 +35,9 @@
 
   .company {
     grid-area: company;
-    font-weight: lighter;
+  }
+
+  &:last-child {
+    margin-top: $font-size-sm;
   }
 }

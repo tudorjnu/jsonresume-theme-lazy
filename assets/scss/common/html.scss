@@ -3,3 +3,13 @@
     margin: $space-3 0 $space-4 0;
   }
 }
+
+@media print {
+  .no-break {
+    break-inside: avoid;
+  }
+
+  .section {
+    break-after: avoid;
+  }
+}

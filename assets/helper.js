@@ -1,7 +1,17 @@
+var mila = require("markdown-it-link-attributes");
+
 const md = require("markdown-it")({
   typographer: true,
   html: true,
 }).enable(["link"]);
+
+md.use(mila, {
+  attrs: {
+    target: "_blank",
+    rel: "noopener",
+  },
+});
+
 const { parsePhoneNumberFromString } = require("libphonenumber-js");
 const iso = require("iso-3166-1");
 const moment = require("moment");

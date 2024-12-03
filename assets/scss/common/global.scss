@@ -33,7 +33,7 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: cm;
+  font-family: "Times New Roman", "Arial", "Roboto", Times, serif;
   color: $neutral-900;
   text-align: justify;
   font-size: $font-size-base;
@@ -54,7 +54,6 @@ h3 {
 
 h4 {
   font-size: $font-size-lg;
-  /* line-height: $line-height-lg; */
   font-weight: bold;
 }
 

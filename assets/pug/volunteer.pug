@@ -4,7 +4,7 @@ if helper.validArray(resume.work)
     hr.line
   div(class='container')
     each vol in resume.volunteer
-      div(class='article no-break work-entry')
+      div(class='work-entry')
         div(class="date")
           | #{helper.calcDate(vol.startDate)} -
           br
@@ -14,6 +14,6 @@ if helper.validArray(resume.work)
           a(href=vol.url)=vol.organization
         p(class="summary")=vol.summary
         if helper.validArray(vol.highlights)
-          ul(class='highlights margin-text-4 no-break')
+          ul(class='highlights margin-text-4')
             each highlight in vol.highlights
               li!=helper.mdToHtml(highlight)

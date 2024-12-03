@@ -12,7 +12,9 @@ function css() {
 }
 
 function html() {
-  const resume = JSON.parse(fs.readFileSync("./resumes/web_dev.json", "utf-8"));
+  const resume = JSON.parse(
+    fs.readFileSync("./resumes/research_postdoc_xjtlu.json", "utf-8"),
+  );
 
   return src("./assets/template.pug")
     .pipe(pug({ data: { resume, helper } }))
