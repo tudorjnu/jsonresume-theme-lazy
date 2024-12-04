@@ -376,16 +376,15 @@ template {
   margin: 15mm 0 20mm 0;
 }
 html {
-  font-size: 13pt;
+  font-size: 13.2pt;
 }
 
 a {
   color: #0a0a0a;
-  font-weight: inherit;
+  font-weight: bolder;
   text-decoration: none;
 }
 a[href] {
-  text-decoration: underline;
   text-decoration-color: #707070;
 }
 
@@ -406,7 +405,7 @@ li:first-child {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: "Times New Roman", "Arial", "Roboto", Times, serif;
+  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia", "Times New Roman", "Arial", "Roboto", Times, serif;
   color: #171717;
   text-align: justify;
   font-size: 1rem;
@@ -452,10 +451,8 @@ hr {
   margin: 1.25rem 0 0 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.875rem;
+.container > *:not(:first-child) {
+  margin-top: 0.875rem;
 }
 
 .margin-container-1:not(:first-child) {
@@ -767,13 +764,9 @@ hr {
 }
 .publication-entry .publisher {
   grid-area: publisher;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .publication-entry .authors {
   grid-area: authors;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .publication-entry .summary {
   margin-top: 0.75rem;

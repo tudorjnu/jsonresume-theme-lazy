@@ -11,5 +11,5 @@ if helper.validArray(resume.publications)
           span(class="authors")!=helper.mdToHtml(publication.authors)
           span(class="publisher")
             a(href=publication.website)=publication.publisher
-          p(class="summary")=publication.summary
+          div(class="summary")!=helper.mdToHtml(publication.summary)
 

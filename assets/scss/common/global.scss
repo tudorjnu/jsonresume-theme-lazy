@@ -6,11 +6,11 @@ html {
 
 a {
   color: $text-color;
-  font-weight: inherit;
+  font-weight: bolder;
   text-decoration: none;
 
   &[href] {
-    text-decoration: underline;
+    // text-decoration: underline;
     text-decoration-color: color.adjust($text-color, $lightness: 40%);
   }
 }
@@ -33,7 +33,8 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: "Times New Roman", "Arial", "Roboto", Times, serif;
+  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia",
+    "Times New Roman", "Arial", "Roboto", Times, serif;
   color: $neutral-900;
   text-align: justify;
   font-size: $font-size-base;
@@ -79,8 +80,6 @@ hr {
   margin: $font-size-xl 0 0 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: $font-size-sm;
+.container > *:not(:first-child) {
+  margin-top: $font-size-sm;
 }
