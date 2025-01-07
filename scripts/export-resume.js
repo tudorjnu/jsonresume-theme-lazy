@@ -1,17 +1,28 @@
+const path = require("path");
 const { exec } = require("child_process");
 
 // Get arguments from the command line
 const args = process.argv.slice(2);
-const resume = args[0]; // Resume JSON file
-const output = args[1]; // Output file
+const resumeJson = args[0]; // Resume JSON file
+let outputPdf = args[1]; // Optional output PDF name
 
-if (!resume || !output) {
-  console.error("Usage: npm run export-resume -- <resume.json> <output.pdf>");
+// Validate arguments
+if (!resumeJson) {
+  console.error("Usage: npm run export-resume -- <resume.json> [<output.pdf>]");
   process.exit(1);
 }
 
-// Construct the command
-const command = `resume export ${output} --format pdf --theme . --resume ${resume}`;
+// If no output PDF name is specified, derive it from the JSON filename
+if (!outputPdf) {
+  const base = path.basename(resumeJson, path.extname(resumeJson));
+  outputPdf = `${base}.pdf`;
+}
+
+// Construct the output path in the `resumes-pdf` folder
+const outputFilePath = path.join("resumes-pdf", outputPdf);
+
+// Construct the command for the resume-cli
+const command = `resume export "${outputFilePath}" --format pdf --theme . --resume "${resumeJson}"`;
 
 exec(command, (error, stdout, stderr) => {
   if (error) {
