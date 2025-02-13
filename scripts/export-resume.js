@@ -18,8 +18,15 @@ if (!outputPdf) {
   outputPdf = `${base}.pdf`;
 }
 
-// Construct the output path in the `resumes-pdf` folder
-const outputFilePath = path.join("resumes-pdf", outputPdf);
+// Ensure outputPdf is a valid path
+let outputFilePath;
+if (path.isAbsolute(outputPdf)) {
+  // If outputPdf is an absolute path, use it directly
+  outputFilePath = outputPdf;
+} else {
+  // Otherwise, construct the path relative to "resumes-pdf"
+  outputFilePath = path.join("resumes-pdf", outputPdf);
+}
 
 // Construct the command for the resume-cli
 const command = `resume export "${outputFilePath}" --format pdf --theme . --resume "${resumeJson}"`;
