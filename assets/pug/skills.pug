@@ -1,0 +1,10 @@
+div(class='section')
+  h3.name Skills
+  hr.line
+div(class='skills')
+  each skill in resume.skills
+    div(class='skill margin-container-0')
+      p(class="name")
+        strong= skill.name + ': '
+        if helper.validArray(skill.keywords)
+          | #{skill.keywords.join(', ')}

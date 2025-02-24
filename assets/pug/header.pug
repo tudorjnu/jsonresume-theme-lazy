@@ -33,22 +33,3 @@ div(class='header-container')
         else if profile.network == "LinkedIn"
           i(class='fab fa-linkedin')
           a(href=profile.url)="linkedin.com/in/" + profile.username
-
-  if helper.validArray(resume.skills)
-    div(class='skills')
-      div(class='section')
-        h3.name Skills
-        hr.line
-      div(class='skills')
-        each skill in resume.skills
-          div(class='skill margin-container-1')
-            p(class="name")= skill.name + ': '
-            if helper.validArray(skill.keywords)
-              p(class="keywords")= skill.keywords.join(', ')
-
-  if resume.basics.summary
-    div(class='summary')
-      div(class='section')
-        h3.name Summary
-        hr.line
-      p=resume.basics.summary

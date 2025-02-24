@@ -4,7 +4,6 @@
   grid-template-rows: auto auto;
   grid-template-areas:
     "title profiles"
-    "summary skills";
 
   gap: 0 2em;
 
@@ -61,22 +60,6 @@
         text-decoration: none;
         color: inherit;
       }
-    }
-  }
-
-  .skill {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: auto;
-
-    .name {
-      font-weight: bold;
-      margin-right: $space-1;
-    }
-
-    .keywords {
-      flex-grow: 1;
-      text-align: left;
     }
   }
 }
