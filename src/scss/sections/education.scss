@@ -1,41 +1,28 @@
 @use "../variables";
 
-@use "sass:color";
-
 .education-entry {
   display: grid;
   grid-template-columns: 100px 1fr auto;
-  grid-template-areas:
-    "date title institution"
-    "date courses courses"
-    "date highlights highlights";
-
-  font-size: variables.$font-size-base;
+  break-inside: avoid;
 
   .date {
     text-align: left;
-    grid-area: date;
-  }
-
-  .highlights {
-    margin-top: variables.$font-size-xs;
-    grid-area: highlights;
-  }
-
-  .courses {
-    grid-area: courses;
   }
 
   .title {
-    grid-area: title;
-    display: flex;
-    flex-direction: column;
     margin-right: 20px;
-    text-align: left;
   }
 
   .institution {
-    grid-area: institution;
-    // font-weight: lighter;
+    align-self: center;
+  }
+
+  .highlights {
+    grid-column: span 2;
+  }
+
+  p {
+    grid-column: span 2;
+    margin: 0;
   }
 }

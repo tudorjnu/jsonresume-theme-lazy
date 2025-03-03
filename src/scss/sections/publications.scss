@@ -1,7 +1,5 @@
 @use "../variables";
 
-@use "sass:color";
-
 .publication-entry {
   display: grid;
   grid-template-columns: 100px 1fr;

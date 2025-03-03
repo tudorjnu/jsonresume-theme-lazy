@@ -15,6 +15,6 @@ if helper.validArray(resume.work)
         if work.summary
           p.summary= work.summary
         if helper.validArray(work.highlights)
-          ul.highlights.margin-text-4.no-break
+          ul.highlights
             each highlight in work.highlights
               li!= helper.mdToHtml(highlight)

@@ -7,7 +7,9 @@ const fs = require("fs");
 const helper = require("./src/lib/helper.js");
 
 function css() {
-  return src("./src/styles.scss").pipe(sass()).pipe(dest("./dist/"));
+  return src("./src/styles.scss")
+    .pipe(sass().on("error", sass.logError)) // Handle Sass errors
+    .pipe(dest("./dist/"));
 }
 
 function html() {
