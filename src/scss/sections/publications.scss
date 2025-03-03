@@ -1,3 +1,5 @@
+@use "../variables";
+
 @use "sass:color";
 
 .publication-entry {
@@ -9,14 +11,14 @@
     "date publisher"
     "date summary";
 
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  font-size: variables.$font-size-base;
+  line-height: variables.$line-height-base;
 
   .date {
     text-align: left;
     grid-area: date;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+    font-size: variables.$font-size-base;
+    line-height: variables.$line-height-base;
   }
 
   .title {
@@ -32,7 +34,7 @@
   }
 
   .summary {
-    margin-top: $font-size-xs;
+    margin-top: variables.$font-size-xs;
     grid-area: summary;
     margin-top: 0.5em;
   }

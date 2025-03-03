@@ -1,0 +1,88 @@
+@use "variables";
+@use "sass:color";
+
+html {
+  font-size: variables.$base-font-size;
+}
+
+a {
+  color: variables.$text-color;
+  font-weight: bolder;
+  text-decoration: none;
+
+  &[href] {
+    // text-decoration: underline;
+    text-decoration-color: color.adjust(variables.$text-color, $lightness: 40%);
+  }
+}
+
+p,
+q {
+  line-height: variables.$line-height-1;
+}
+
+li {
+  line-height: variables.$line-height-2;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.content {
+  width: variables.$content-width;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia",
+    "Times New Roman", "Arial", "Roboto", Times, serif;
+  color: variables.$neutral-900;
+  text-align: justify;
+  font-size: variables.$font-size-base;
+  line-height: variables.$line-height-base;
+}
+
+h2 {
+  font-size: variables.$font-size-xl;
+  line-height: variables.$line-height-xl;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: variables.$font-size-3xl;
+  line-height: variables.$line-height-3xl;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: variables.$font-size-lg;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: variables.$font-size-base;
+  line-height: variables.$line-height-base;
+  font-weight: bold;
+}
+
+hr {
+  flex-grow: 1;
+  height: 2px;
+  background-color: variables.$neutral-700;
+  color: variables.$neutral-700;
+  align-self: center;
+  margin: 0 0 0 variables.$font-size-3xl;
+}
+
+.section-container {
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: variables.$font-size-xl 0 0 0;
+  }
+}
+
+.container > *:not(:first-child) {
+  margin-top: variables.$font-size-sm;
+}

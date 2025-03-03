@@ -1,49 +1,52 @@
+@use "mixins";
+@use "variables";
+
 .margin-container-1:not(:first-child) {
-  margin-top: $font-size-sm;
+  margin-top: variables.$font-size-sm;
 }
 
 .margin-container-2:not(:first-child) {
-  margin-top: $font-size-lg;
+  margin-top: variables.$font-size-lg;
 }
 
 .margin-container-3:not(:first-child) {
-  margin-top: $font-size-xl;
+  margin-top: variables.$font-size-xl;
 }
 
 .margin-container-4:not(:first-child) {
-  margin-top: $font-size-2xl;
+  margin-top: variables.$font-size-2xl;
 }
 
 .padding-container-2 {
-  padding: $space-2 0;
+  padding: variables.$space-2 0;
 }
 
 .padding-top-container-2 {
-  padding-top: $space-2;
+  padding-top: variables.$space-2;
 }
 
 .padding-bottom-container-2 {
-  padding-bottom: $space-2;
+  padding-bottom: variables.$space-2;
 }
 
 .margin-text-1 {
-  @include margin-text(2px);
+  @include mixins.margin-text(2px);
 }
 
 .margin-text-2 {
-  @include margin-text(4px);
+  @include mixins.margin-text(4px);
 }
 
 .margin-text-3 {
-  @include margin-text(6px);
+  @include mixins.margin-text(6px);
 }
 
 .margin-text-4 {
-  @include margin-text(8px);
+  @include mixins.margin-text(8px);
 }
 
 .margin-text-5 {
-  @include margin-text(14px);
+  @include mixins.margin-text(14px);
 }
 
 .no-break {
@@ -51,11 +54,11 @@
 }
 
 .no-alone-1 {
-  @include no-alone(75px);
+  @include mixins.no-alone(75px);
 }
 
 .no-alone-2 {
-  @include no-alone(150px);
+  @include mixins.no-alone(150px);
 }
 
 .text-xs {

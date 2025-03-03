@@ -1,3 +1,5 @@
+@use "../variables";
+
 @use "sass:color";
 
 .certificate-entry {
@@ -6,8 +8,8 @@
   grid-template-areas:
     "date title"
     "date issuer";
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  font-size: variables.$font-size-base;
+  line-height: variables.$line-height-base;
 
   .date {
     text-align: left;

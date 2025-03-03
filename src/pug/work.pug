@@ -1,0 +1,20 @@
+if helper.validArray(resume.work)
+  div.section-container
+    div.section-title
+      h3.name Work
+      hr.line
+    each work in resume.work
+      div.work-entry
+        div.date
+          = helper.calcDate(work.startDate) + ' -'
+          br
+          = helper.calcDate(work.endDate)
+        h4.title= work.position
+        span.company
+          a(href=work.url)= work.company
+        if work.summary
+          p.summary= work.summary
+        if helper.validArray(work.highlights)
+          ul.highlights.margin-text-4.no-break
+            each highlight in work.highlights
+              li!= helper.mdToHtml(highlight)

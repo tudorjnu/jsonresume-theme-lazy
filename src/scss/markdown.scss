@@ -1,3 +1,5 @@
+@use "variables";
+
 .markdown {
   h1 {
     font-size: 160%;
@@ -30,19 +32,19 @@
   }
 
   ul, ol {
-    margin-left: $space-2;
+    margin-left: variables.$space-2;
   }
 
   img {
     display: block;
-    margin: $space-2 auto;
+    margin: variables.$space-2 auto;
     max-width: 1000px;
     text-align: center;
   }
 
   blockquote {
-    margin: $space-2 0;
-    padding: 15px $space-2;
+    margin: variables.$space-2 0;
+    padding: 15px variables.$space-2;
 
     p {
       display: inline;

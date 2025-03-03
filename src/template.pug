@@ -3,17 +3,19 @@ html(lang="en")
   head
     meta(charset="utf-8")
     style
-      include styles.css
+      include ../dist/styles.css
     title=`Resume ${resume.basics.name} – ${resume.basics.label}`
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
     link(href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet")
   body
     div(class='content')
       include pug/header
+      include pug/summary
+      include pug/skills
       include pug/work
-      include pug/education
-      include pug/publications
-      include pug/volunteer
+      // include pug/education
+      // include pug/publications
+      // include pug/volunteer
       // include pug/projects
       // include pug/certificates
-      include pug/interests
+      // include pug/interests

@@ -1,12 +1,15 @@
+@use "variables";
+
 @media not print {
   body {
-    margin: $space-3 0 $space-4 0;
+    margin: variables.$space-3 0 variables.$space-4 0;
   }
 }
 
 @media print {
   .no-break {
     break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .section {

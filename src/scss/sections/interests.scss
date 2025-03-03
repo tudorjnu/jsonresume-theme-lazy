@@ -1,3 +1,5 @@
+@use "../variables";
+
 .interests {
   .interest {
     display: grid;
@@ -7,7 +9,7 @@
 
     .name {
       font-weight: bold;
-      margin-right: $space-1;
+      margin-right: variables.$space-1;
       grid-area: name;
       text-align: left;
     }

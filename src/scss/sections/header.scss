@@ -1,12 +1,9 @@
-.header-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "title profiles"
-    "summary skills";
+@use "../variables";
 
-  gap: 0 2em;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 2rem;
 
   .title {
     grid-area: title;
@@ -15,21 +12,15 @@
 
     .name {
       font-weight: bolder;
-      font-size: $font-size-5xl;
-      line-height: $line-height-5xl;
+      font-size: variables.$font-size-5xl;
+      line-height: variables.$line-height-5xl;
     }
 
     .label {
-      // font-weight: lighter;
-      font-size: $font-size-3xl;
-      line-height: $line-height-3xl;
+      font-size: variables.$font-size-3xl;
+      line-height: variables.$line-height-3xl;
       margin-top: 0.5em;
     }
-  }
-
-  .summary {
-    align-self: start;
-    grid-area: summary;
   }
 
   .profiles {
@@ -42,7 +33,7 @@
     align-self: stretch;
     grid-area: profiles;
     list-style: none;
-    font-size: $font-size-base;
+    font-size: variables.$font-size-base;
 
     .profile {
       display: flex;
@@ -52,7 +43,7 @@
 
       i {
         display: flex;
-        font-size: $font-size-base;
+        font-size: variables.$font-size-base;
         justify-content: center;
         align-items: center;
       }
@@ -61,22 +52,6 @@
         text-decoration: none;
         color: inherit;
       }
-    }
-  }
-
-  .skill {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: auto;
-
-    .name {
-      font-weight: bold;
-      margin-right: $space-1;
-    }
-
-    .keywords {
-      flex-grow: 1;
-      text-align: left;
     }
   }
 }

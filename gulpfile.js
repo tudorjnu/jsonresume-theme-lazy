@@ -1,39 +1,33 @@
 const { src, dest, watch, series } = require("gulp");
 const pug = require("gulp-pug");
 const sass = require("gulp-sass")(require("sass"));
-
 const bs = require("browser-sync").create();
 
 const fs = require("fs");
-const helper = require("./assets/helper.js");
+const helper = require("./src/lib/helper.js");
 
 function css() {
-  return src("./assets/styles.scss").pipe(sass()).pipe(dest("./assets"));
+  return src("./src/styles.scss").pipe(sass()).pipe(dest("./dist/"));
 }
 
 function html() {
-  const resume = JSON.parse(
-    fs.readFileSync("./resumes/research_postdoc_xjtlu.json", "utf-8"),
-  );
+  const resume = JSON.parse(fs.readFileSync("./resume.json", "utf-8"));
 
-  return src("./assets/template.pug")
+  return src("./src/template.pug")
     .pipe(pug({ data: { resume, helper } }))
-    .pipe(dest("./public"));
+    .pipe(dest("./dist"));
 }
 
 function serve() {
   bs.init({
-    server: {
-      baseDir: "./public",
-      index: "template.html",
-    },
+    server: { baseDir: "./dist/", index: "template.html" },
     ui: false,
     open: false,
   });
 
-  watch("./assets/**/*.scss", series(css, html));
-  watch(["./assets/**/*.pug", "./resume.json"], html);
-  bs.watch("./public/*.html").on("change", bs.reload);
+  watch("./src/**/*.scss", series(css, html));
+  watch(["./src/**/*.pug", "./resume.json"], html);
+  bs.watch("./dist/*.html").on("change", bs.reload);
 }
 
 exports.css = css;

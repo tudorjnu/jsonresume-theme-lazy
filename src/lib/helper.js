@@ -1,4 +1,7 @@
 var mila = require("markdown-it-link-attributes");
+const { parsePhoneNumberFromString } = require("libphonenumber-js");
+const iso = require("iso-3166-1");
+const moment = require("moment");
 
 const md = require("markdown-it")({
   typographer: true,
@@ -12,35 +15,20 @@ md.use(mila, {
   },
 });
 
-const { parsePhoneNumberFromString } = require("libphonenumber-js");
-const iso = require("iso-3166-1");
-const moment = require("moment");
-
 const mdToHtml = (string) => (string ? md.render(string) : "");
 
 const calcLocation = (location) => {
-  const array = [];
+  if (!location) return null;
 
-  if (!location) {
-    return null;
-  }
+  const { city, countryCode } = location;
+  console.log(city);
+  const country = countryCode
+    ? iso.whereAlpha2(countryCode)?.country || countryCode
+    : null;
 
-  if (location.city) {
-    array.push(location.city);
-  }
+  const parts = [city, country].filter(Boolean);
 
-  if (location.region) {
-    array.push(location.region);
-  }
-
-  if (location.countryCode) {
-    const country = iso.whereAlpha2(location.countryCode);
-    array.push(
-      country && array.length < 2 ? country.country : location.countryCode,
-    );
-  }
-
-  return array.length > 0 ? array.join(", ") : null;
+  return parts.length ? parts.join(", ") : null;
 };
 
 const calcDate = (date) => {
