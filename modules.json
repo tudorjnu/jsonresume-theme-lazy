@@ -1,0 +1,149 @@
+{
+  "masters": [
+    {
+      "code": "COMP516",
+      "name": "Research Methods in Computer Science",
+      "score": "73",
+      "highlights": [
+        "Gained a deep understanding of research methodologies in Computer Science, including literature review, technical writing, and project planning.",
+        "Enhanced critical thinking by evaluating current research and proposing alternative approaches for future work.",
+        "Developed high-order problem-solving skills, tackling complex issues in Computer Science with systematic and creative approaches.",
+        "Demonstrated self-direction and autonomy in planning and executing research projects, producing high-quality research proposals and literature reviews.",
+        "Acquired transferable skills in project management, time management, and ethical decision-making in research.",
+        "Gained practical experience in communication, both oral (presentation skills) and written (academic writing and referencing).",
+        "Practiced effective project planning techniques, including risk management and time management, critical for delivering successful research projects.",
+        "Explored Legal, Social, Ethical, and Professional (LSEP) issues in IT research, including data protection and industry standards.",
+        "Completed a research project and a group oral presentation, applying acquired skills to real-world problems and research scenarios."
+      ]
+    },
+    {
+      "code": "COMP517",
+      "name": "Programming Fundamentals",
+      "score": "83",
+      "highlights": [
+        "Gained foundational knowledge of imperative programming concepts, including variables, control flow, loops, and methods.",
+        "Designed and coded applications using a modern programming language (Python), applying core programming principles.",
+        "Developed object-oriented programming (OOP) skills, understanding concepts like encapsulation, inheritance, and polymorphism.",
+        "Applied software design principles, including effective naming conventions, code layout, debugging, testing, and documentation.",
+        "Enhanced problem-solving abilities through the analysis of computational problems and the creation of appropriate, efficient solutions.",
+        "Acquired experience with advanced data structures like arrays, linked lists, queues, and stacks, using them in practical applications.",
+        "Gained familiarity with input/output handling, exception handling, recursion, and functional programming techniques.",
+        "Completed multiple continuous assessments, developing programs and demonstrating the application of programming principles to solve real-world problems."
+      ]
+    },
+    {
+      "code": "COMP518",
+      "name": "Database and Information Systems",
+      "score": "71",
+      "highlights": [
+        "Designed and implemented relational databases with multiple tables, utilizing **entity-relationship modelling** for conceptual database design.",
+        "Developed a systematic understanding of relational database theory, including **relational algebra operations** and **normalization**.",
+        "Gained proficiency in **SQL** for both data definition and data manipulation, focusing on efficient querying in modern DBMS.",
+        "Applied **transaction management** and **concurrency control** mechanisms to ensure database consistency and performance.",
+        "Enhanced **critical thinking** and **problem-solving** skills through logical database design and normalisation exercises.",
+        "Completed projects on **relational algebra**, **SQL transactions**, and **entity-relationship modelling**, demonstrating practical database implementation skills.",
+        "Developed strong **numeracy and computational skills**, focusing on the mathematical foundations of databases and data structures.",
+        "Understood key database management principles such as **atomicity**, **serializability**, and **concurrency control**, applying these to real-world scenarios."
+      ]
+    },
+    {
+      "code": "COMP533",
+      "name": "Maths and Statistics for AI and Data Science",
+      "score": "82",
+      "highlights": [
+        "Developed a strong foundation in **linear algebra** and **differential calculus**, applying mathematical principles to data science problems.",
+        "Gained critical understanding of **probability theory** and **statistics**, including hypothesis testing, probability distributions, and statistical significance.",
+        "Learned to perform **optimization techniques** such as gradient descent and second-order methods, applying them to AI and data science models.",
+        "Applied **eigen-decomposition** and **Singular Value Decomposition (SVD)** to solve linear algebra problems in data analysis and machine learning.",
+        "Developed problem-solving skills through **numeracy** and **computational skills**, working with matrices, vectors, and derivatives in various AI-related tasks.",
+        "Completed a software project demonstrating the application of **statistical and mathematical methods** to solve data science challenges.",
+        "Analyzed real-world data using **Bayesian** and **frequentist approaches**, applying **Bayes' theorem** and probability sampling techniques.",
+        "Communicated the outcomes of data science experiments through video presentations and written reports, enhancing oral and written communication skills.",
+        "Explored the relationships between **correlation and causation**, applied linear regression, and worked with descriptive statistics to visualize data."
+      ]
+    },
+    {
+      "code": "COMP527",
+      "name": "Data Mining and Visualisation",
+      "score": "85",
+      "highlights": [
+        "Gained an in-depth understanding of current challenges and research in Data Mining, including text mining, clustering, and classification.",
+        "Developed hands-on experience with data mining algorithms, focusing on classification, regression, association rule mining, and clustering techniques.",
+        "Critically evaluated advanced data mining algorithms and proposed improvements for handling large-scale datasets and distributed learning.",
+        "Applied data preprocessing techniques and hybrid solutions to solve complex data mining problems in real-world scenarios.",
+        "Explored the application of data visualization methods in data mining using freely available visualization tools.",
+        "Studied advanced solutions for web mining, information retrieval, and temporal/sequential data mining algorithms.",
+        "Completed two programming assignments focused on developing and implementing data mining algorithms, demonstrating practical skills in data analysis.",
+        "Enhanced critical thinking and problem-solving skills by identifying data mining problems and analyzing solutions using cutting-edge methodologies.",
+        "Acquired the ability to evaluate and implement large-scale data mining systems and distributed learning algorithms, addressing the challenges of big data."
+      ]
+    },
+    {
+      "code": "COMP532",
+      "name": "Machine Learning and Bio-Inspired Optimisation",
+      "score": "81",
+      "highlights": [
+        "Gained a systematic understanding of bio-inspired algorithms for autonomous agent design and complex optimization problems.",
+        "Developed practical knowledge in multi-agent reinforcement learning, swarm intelligence, and evolutionary algorithms for solving dynamic, real-world problems.",
+        "Acquired a deep understanding of biologically inspired machine learning, including neural networks, artificial immune systems, and DNA computing.",
+        "Applied bio-inspired optimization techniques to various use cases, such as logistics and robotic systems.",
+        "Built hands-on experience by coding bio-inspired algorithms and using industry-standard tools to solve optimization tasks.",
+        "Analyzed the benefits and limitations of diverse machine learning techniques, gaining insight into their practical applications.",
+        "Covered advanced topics like deep learning with restricted Boltzmann machines, autoencoders, and deep belief networks, exploring their use in bio-inspired systems.",
+        "Completed multiple coding assignments and reports, applying bio-inspired methods to optimization and machine learning challenges."
+      ]
+    },
+    {
+      "code": "COMP534",
+      "name": "Applied Artificial Intelligence",
+      "score": "80",
+      "highlights": [
+        "Developed in-depth knowledge of machine learning techniques, including supervised and unsupervised learning, model evaluation metrics, and hyperparameter tuning.",
+        "Gained practical experience using AI software libraries such as **TensorFlow**, **Keras**, and **PyTorch** to implement machine learning and deep learning models.",
+        "Critically evaluated and applied **Neural Network architectures** and **Deep Learning models**, including **CNNs**, **RNNs**, and **GANs**, for various AI applications.",
+        "Implemented deep learning architectures for **Natural Language Processing (NLP)** tasks, such as text classification and sentiment analysis using **LSTM networks**.",
+        "Applied **Computer Vision** techniques for tasks like image classification, segmentation, and object detection using **convolutional neural networks (CNNs)**.",
+        "Demonstrated critical thinking and problem-solving skills by identifying suitable AI solutions for complex problems in **NLP** and **Computer Vision**.",
+        "Evaluated machine learning model outputs to improve accuracy and performance across different domains, including healthcare and autonomous systems.",
+        "Completed hands-on laboratory work and real-world AI applications, integrating theoretical concepts with practical implementations."
+      ]
+    },
+    {
+      "code": "COMP575",
+      "name": "Computational Intelligence",
+      "score": "78",
+      "highlights": [
+        "Gained a deep understanding of **neural networks** and their learning mechanisms, including single-layer and multi-layer perceptrons, radial-basis function networks, support vector machines, and self-organising maps.",
+        "Explored the advantages of **neural networks** in comparison to traditional computational methods, with applications in **artificial intelligence** problem-solving.",
+        "Developed skills in **evolutionary computation** techniques, such as **genetic algorithms**, **genetic programming**, and **particle swarm optimization**, and their use in optimizing complex systems.",
+        "Learned to apply **bio-inspired algorithms** for optimization, understanding when to use these methods over classical approaches in **discrete and continuous configurations**.",
+        "Analyzed the **mathematical properties** of neural network architectures and evolutionary algorithms, focusing on their applications in solving AI-related problems.",
+        "Acquired the ability to critically evaluate the use of **evolutionary optimisation** techniques in systems where traditional methods are ineffective.",
+        "Understood the role of **genetic encoding and evolutionary operators** in solving complex optimization problems.",
+        "Gained practical experience in using **evolutionary and bio-inspired optimization techniques** to improve AI systems and models.",
+        "Completed projects and numerical analysis applying **evolutionary and neural network-based techniques** to real-world AI problems."
+      ]
+    },
+    {
+      "code": "COMP702",
+      "name": "MSc Project",
+      "score": "76",
+      "highlights": [
+        "Independently investigated and specified a substantial problem in Computer Science, producing a detailed project plan and timeline.",
+        "Developed strong skills in **project management**, effectively managing time, resources, and tasks to complete a large-scale IT project.",
+        "Designed, implemented, and tested innovative solutions to complex IT problems, applying cutting-edge techniques from research and industry.",
+        "Critically evaluated the project results, contributing original insights and scholarly value to the field.",
+        "Effectively communicated progress and findings through formal **presentations** and a final **dissertation**, demonstrating both oral and written communication skills.",
+        "Applied **legal, ethical, social, and professional (LSEP)** frameworks in the planning and execution of the project, ensuring compliance with industry standards.",
+        "Acquired key **transferable skills** such as initiative, decision-making in complex situations, and independent learning, essential for continued professional development.",
+        "Prepared and delivered a **live demonstration** of the project’s software, showcasing technical proficiency and clear communication of complex technical work.",
+        "Designed and evaluated the project within the framework of **commercial awareness**, identifying and balancing potential risks and rewards.",
+        "Published MSc project in **IEEE International Conference on Robotics and Automation (ICRA)**, addressing the Sim2Real gap for optical tactile sensors using a novel texture generation network.",
+        "Developed a method to map simulated tactile images to **photorealistic real-world images**, preserving the integrity of non-contact regions while applying realistic textures to deformed areas.",
+        "Reduced the accuracy drop in a **Sim2Real classification task** from **38.43% to 0.81%** by utilizing the generated tactile images, significantly improving Sim2Real learning performance for tactile sensing.",
+        "Implemented separation of tactile images into contact and non-contact regions, ensuring that textures were only applied to the regions in contact, thus mimicking real imperfections in object surfaces.",
+        "Conducted extensive experiments showing that the proposed network successfully generates realistic artefacts on deformed regions, enabling more effective deployment of simulated models in real-world robotics tasks."
+      ]
+    }
+  ]
+}
