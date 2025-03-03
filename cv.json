@@ -1,0 +1,466 @@
+{
+  "basics": {
+    "name": "Tudor Jianu",
+    "label": "PhD Candidate",
+    "phone": "+447356033434",
+    "email": "T.Jianu@liverpool.ac.uk",
+    "website": "https://tudorjnu.github.io",
+    "summary": "Proven expertise in applying computer vision and machine learning techniques to enhance autonomy in medical procedures. Skilled in designing and improving AI models using Python, with a focus on real-world applications in healthcare technology. Strong ability to work independently or in small, focused teams on complex, interdisciplinary projects. Thriving in mentally stimulating environments with an affinity for solving complex problems. Passionate about technology, with a deep appreciation for open-source projects and a commitment to leveraging innovative tools to optimize workflows and drive efficiency.",
+    "location": {
+      "city": "Liverpool",
+      "countryCode": "UK"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "tudorjnu",
+        "url": "https://www.linkedin.com/in/tudorjnu/"
+      },
+      {
+        "network": "Github",
+        "username": "tudorjnu",
+        "url": "github.com/tudorjnu/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "Web Developer",
+      "startDate": "2024-09-01",
+      "summary": "Designed, developed, and deployed a full-stack web application, leveraging modern technologies and frameworks to create a robust and scalable solution. Focused on seamless integration between the front-end and back-end systems while delivering a user-centric design and efficient performance.",
+      "highlights": [
+        "Defined the project scope, objectives, and deliverables in collaboration with stakeholders, ensuring alignment with user needs and business goals.",
+        "Developed the back-end architecture using MongoDB database and Mongoose ORM, ensuring efficient data handling and query optimization.",
+        "Designed and implemented the front-end using React, creating responsive, interactive, and visually appealing user interfaces.",
+        "Utilized the Next.js full-stack framework to streamline development, enabling server-side rendering (SSR) for improved performance and SEO.",
+        "Implemented RESTful APIs to facilitate seamless communication between the front-end and back-end.",
+        "Ensured scalability and maintainability by following industry best practices, including modular design patterns and clean coding standards.",
+        "Conducted thorough testing and debugging to ensure a high-quality application, resolving issues efficiently.",
+        "Deployed the application to a cloud-based environment, ensuring reliable hosting and availability.",
+        "Collaborated with team members and stakeholders to iteratively improve the application based on user feedback and performance metrics."
+      ]
+    },
+    {
+      "company": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "Web Developer",
+      "startDate": "2024-09-01",
+      "summary": "Designed, developed, and deployed a full-stack web application, leveraging modern technologies and frameworks to create a robust and scalable solution. Focused on seamless integration between the front-end and back-end systems while delivering a user-centric design and efficient performance.",
+      "highlights": [
+        "Designed and implemented 'CathSim,' a simulation environment for training and evaluating guidewire navigation tasks, streamlining AI development for endovascular procedures.",
+        "Acquired and processed a comprehensive dataset using Biplanar X-ray Scanning, enabling accurate spatial reconstruction and segmentation of guidewires.",
+        "Optimized autonomous navigation in complex vascular structures by critiquing and evaluating reinforcement learning (RL) algorithms.",
+        "Resolved challenges in guidewire 3D reconstruction and triangulation through advanced computer vision techniques, enhancing model precision.",
+        "Developed 'Splineformer', a transformer-based architecture utilizing B-spline representations to predict guidewire shapes efficiently.",
+        "Released an open-source medical imaging dataset for broader AI research use, fostering collaboration within the AI community.",
+        "Published high-impact research papers and technical reports, contributing to advancements in AI-driven medical navigation systems.",
+        "Evaluated model performance on navigation efficiency, accuracy, and robustness through experiments utilizing machine learning frameworks such as TensorFlow and PyTorch.",
+        "Standardized the manual annotation process for guidewire segmentation, improving data accuracy for future AI models.",
+        "Identified gaps and innovation opportunities by reviewing reinforcement learning methodologies, computer vision techniques, and medical navigation systems in the literature.",
+        "Refined real-time navigation algorithms through interpretation and analysis of medical imaging data, enhancing accuracy in simulated procedures.",
+        "Collaborated with interdisciplinary teams, sharing insights and driving advancements in AI-driven medical robotics.",
+        "Deployed autonomous agent scripts on HPCs (Barkla) to perform endovascular navigation tasks autonomously.",
+        "Presented research findings at international conferences, including the Hamlyn Symposium of Medical Robotics.",
+        "Supervised trainee researchers, offering technical guidance to foster academic development and innovation in AI research.",
+        "Developed machine learning demonstrations using industrial manipulators (UR5) and instance segmentation networks (Mask-RCNN) for SmartLab.",
+        "Mentored undergraduate and master’s students in research methodology, coding practices, and machine learning techniques.",
+        "Led workshops on machine learning and reinforcement learning, showcasing tools and techniques to researchers and students.",
+        "Managed interdisciplinary research projects, ensuring timely delivery of milestones while coordinating with diverse teams.",
+        "Automated medical imaging data preprocessing using Python scripts, significantly reducing data preparation time for the research team.",
+        "Presented monthly progress reports on endovascular navigation research, providing actionable feedback to a multidisciplinary team.",
+        "Published peer-reviewed papers on deep learning and medical navigation in top-tier AI and medical journals.",
+        "Authored comprehensive technical documentation for machine learning models and experimental setups, ensuring reproducibility and collaboration across teams.",
+        "Demonstrated lab capabilities to industry professionals, researchers, and international stakeholders, including the Estonian Embassy, highlighting cutting-edge AI research."
+      ]
+    },
+    {
+      "company": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "PhD Researcher in Artificial Intelligence and Endovascular Navigation",
+      "startDate": "2021-10-01",
+      "summary": "Developed advanced AI-driven solutions for autonomous navigation in endovascular procedures, utilizing state-of-the-art techniques in deep learning, reinforcement learning, and computer vision. Spearheaded the creation of novel simulation environments and transformer-based architectures, contributing to innovations in medical robotics and AI research.",
+      "highlights": [
+        "Designed and implemented 'CathSim,' a simulation environment for training and evaluating guidewire navigation tasks, streamlining AI development for endovascular procedures.",
+        "Acquired and processed a comprehensive dataset using Biplanar X-ray Scanning, enabling accurate spatial reconstruction and segmentation of guidewires.",
+        "Optimized autonomous navigation in complex vascular structures by critiquing and evaluating reinforcement learning (RL) algorithms.",
+        "Resolved challenges in guidewire 3D reconstruction and triangulation through advanced computer vision techniques, enhancing model precision.",
+        "Developed 'Splineformer', a transformer-based architecture utilizing B-spline representations to predict guidewire shapes efficiently.",
+        "Released an open-source medical imaging dataset for broader AI research use, fostering collaboration within the AI community.",
+        "Published high-impact research papers and technical reports, contributing to advancements in AI-driven medical navigation systems.",
+        "Evaluated model performance on navigation efficiency, accuracy, and robustness through experiments utilizing machine learning frameworks such as TensorFlow and PyTorch.",
+        "Standardized the manual annotation process for guidewire segmentation, improving data accuracy for future AI models.",
+        "Identified gaps and innovation opportunities by reviewing reinforcement learning methodologies, computer vision techniques, and medical navigation systems in the literature.",
+        "Refined real-time navigation algorithms through interpretation and analysis of medical imaging data, enhancing accuracy in simulated procedures.",
+        "Collaborated with interdisciplinary teams, sharing insights and driving advancements in AI-driven medical robotics.",
+        "Deployed autonomous agent scripts on HPCs (Barkla) to perform endovascular navigation tasks autonomously.",
+        "Presented research findings at international conferences, including the Hamlyn Symposium of Medical Robotics.",
+        "Supervised trainee researchers, offering technical guidance to foster academic development and innovation in AI research.",
+        "Developed machine learning demonstrations using industrial manipulators (UR5) and instance segmentation networks (Mask-RCNN) for SmartLab.",
+        "Mentored undergraduate and master’s students in research methodology, coding practices, and machine learning techniques.",
+        "Led workshops on machine learning and reinforcement learning, showcasing tools and techniques to researchers and students.",
+        "Managed interdisciplinary research projects, ensuring timely delivery of milestones while coordinating with diverse teams.",
+        "Automated medical imaging data preprocessing using Python scripts, significantly reducing data preparation time for the research team.",
+        "Presented monthly progress reports on endovascular navigation research, providing actionable feedback to a multidisciplinary team.",
+        "Published peer-reviewed papers on deep learning and medical navigation in top-tier AI and medical journals.",
+        "Authored comprehensive technical documentation for machine learning models and experimental setups, ensuring reproducibility and collaboration across teams.",
+        "Demonstrated lab capabilities to industry professionals, researchers, and international stakeholders, including the Estonian Embassy, highlighting cutting-edge AI research."
+      ]
+    },
+    {
+      "company": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "Teaching Assistant",
+      "startDate": "2021-10-01",
+      "summary": "Assisted in teaching advanced AI and robotics courses, providing guidance to students in key areas of computer vision and robotic perception.",
+      "highlights": [
+        "TA for Computer Vision (COMP338): Supported students with coursework on image processing, feature extraction, and machine learning applications in vision.",
+        "TA for Robotic Perception and Manipulation (COMP341): Assisted students with robotic control algorithms, perception systems, and manipulation tasks.",
+        "Held office hours, graded assignments, and provided feedback on student projects.",
+        "Conducted lab sessions, helping students apply theoretical concepts in practical experiments."
+      ]
+    },
+    {
+      "company": "Digital Theme UK-Ukraine Twinning Initiative",
+      "url": "https://www.digital-ukraine.co.uk/",
+      "position": "Lead Architect",
+      "startDate": "2023-01-01",
+      "endDate": "2023-04-01",
+      "summary": "Led the technical and organizational aspects of a virtual conference initiative, connecting UK and Ukrainian institutions for collaborative discussions on digital innovation and research.",
+      "highlights": [
+        "Designed and implemented the technical architecture for a seamless virtual conference experience, ensuring high-quality communication between participants from different regions.",
+        "Collaborated with UK and Ukrainian academic institutions to develop a cohesive digital theme that aligned with both countries' research priorities.",
+        "Managed event logistics, including coordinating speakers, scheduling, and technical support.",
+        "Showcased the latest digital research innovations through interactive sessions, fostering international collaboration and knowledge exchange.",
+        "Ensured robust technical infrastructure to support large-scale participation, troubleshooting issues in real-time to maintain conference flow."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "University of Liverpool CS Outreach",
+      "url": "https://outreach.csc.liv.ac.uk",
+      "position": "Team Member",
+      "startDate": "2021-10-01",
+      "summary": "Contributed to educational outreach programs aimed at promoting computer science to schools and the general public, collaborating with the Electrical Engineering and Electronics Department.",
+      "highlights": [
+        "Led an Introduction to Programming Workshop at Liverpool World Museum using Pi2Go robots, engaging young learners with interactive coding lessons.",
+        "Developed and delivered an Introduction to Machine Learning activity for the Computer Science Summer School, introducing high school students to core AI concepts.",
+        "Contributed to the continuous improvement of outreach initiatives by providing suggestions, problem-solving, and enhancing teamwork.",
+        "Created hands-on Machine Learning projects using TypeScript and HTML code, delivering engaging experiences for participants.",
+        "Led a Deep Learning Workshop for Year 12 students during the Biograd Residential Program, introducing them to neural networks and AI, fostering early interest in advanced computer science topics."
+      ]
+    },
+    {
+      "organization": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "President of Data Science and Artificial Intelligence (DSAI) Society",
+      "startDate": "2020-09-01",
+      "endDate": "2021-09-01",
+      "summary": "Founded and led the Data Science and Artificial Intelligence Society, focused on building a community for students interested in data science and AI.",
+      "highlights": [
+        "Established the society from the ground up, setting strategic goals to foster student engagement in Data Science and AI.",
+        "Organized networking events and hands-on workshops, connecting students with industry professionals and providing practical training.",
+        "Built and led a diverse committee, overseeing recruitment and conflict resolution to ensure smooth operations.",
+        "Secured the commitment of members and partners to sustain the society’s growth and success."
+      ]
+    },
+    {
+      "organization": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "position": "Course Representative",
+      "startDate": "2020-09-01",
+      "endDate": "2021-09-01",
+      "summary": "Represented MSc students in Data Science and Artificial Intelligence, acting as a liaison between students and the department.",
+      "highlights": [
+        "Proactively gathered feedback from students through open discussions, identifying areas for course improvement and enhancing the student experience.",
+        "Presented student concerns and suggestions in departmental meetings, advocating for changes and collaborating on solutions.",
+        "Facilitated communication between students and faculty, addressing academic and administrative issues."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk/",
+      "studyType": "Doctor of Philosophy (PhD)",
+      "area": "Computer Science (Artificial Intelligence and Endovascular Navigation)",
+      "startDate": "2021-10-01",
+      "summary": "Pursuing a Ph.D. in Computer Science, specializing in AI-driven autonomous navigation systems for endovascular procedures. Focused on machine learning, deep learning, reinforcement learning, and computer vision applications in healthcare robotics.",
+      "highlights": [
+        "Developed novel AI techniques for autonomous guidewire navigation in endovascular procedures using deep learning and reinforcement learning.",
+        "Published research papers in leading AI and robotics conferences and journals.",
+        "Collaborated with interdisciplinary teams in healthcare and engineering to advance medical robotics research."
+      ]
+    },
+    {
+      "institution": "University of Liverpool",
+      "url": "https://www.liverpool.ac.uk",
+      "area": "Computer Science",
+      "studyType": "Masters of Science",
+      "startDate": "2020-09-01",
+      "endDate": "2021-09-01",
+      "score": "First Class Honours",
+      "courses": [
+        "COMP516 - Research Methods in Computer Science",
+        "COMP517 - Programming Fundamentals",
+        "COMP518 - Database and Information Systems",
+        "COMP533 - Maths and Statistics for AI and Data Science",
+        "COMP527 - Data Mining and Visualisation",
+        "COMP532 - Machine Learning and BioInspired Optimisation",
+        "COMP534 - Applied Artificial Intelligence",
+        "COMP575 - Computational Intelligence",
+        "COMP702 - MSc Project"
+      ],
+      "highlights": [
+        "Developed expertise in neural network architectures, including CNNs, RNNs, LSTMs, and GANs, applied to domains like Natural Language Processing (NLP) and Computer Vision.",
+        "Gained practical experience using deep learning frameworks such as TensorFlow, Keras, and PyTorch for tasks like image classification, object detection, and text analysis.",
+        "Acquired deep knowledge of bio-inspired algorithms (e.g., swarm intelligence, evolutionary algorithms) and applied them to real-world optimization problems in fields like logistics and robotics.",
+        "Specialized in multi-agent reinforcement learning and biologically inspired machine learning, including neural networks, artificial immune systems, and DNA computing.",
+        "Developed strong mathematical foundations in linear algebra, differential calculus, and probability theory, with a focus on optimization techniques like gradient descent and Singular Value Decomposition (SVD).",
+        "Applied Bayesian and frequentist approaches to enhance AI model performance and analyze real-world data.",
+        "Gained hands-on experience with data mining algorithms, including classification, regression, clustering, and association rule mining, for analyzing large-scale datasets.",
+        "Specialized in solving challenges in web mining, temporal data mining, and distributed learning through advanced data preprocessing and hybrid solutions.",
+        "Designed and implemented innovative solutions to complex AI problems, including a method that improved Sim2Real learning performance for tactile sensing, reducing accuracy drops from 38.43% to 0.81%.",
+        "Independently managed and completed large-scale AI projects, demonstrating strong project management, technical execution, and communication skills.",
+        "Published a novel texture generation network for Sim2Real gap research in IEEE International Conference on Robotics and Automation (ICRA), contributing original insights to the field."
+      ]
+    },
+    {
+      "institution": "Coventry University",
+      "url": "https://www.coventry.ac.uk/",
+      "area": "Business Administration",
+      "studyType": "Bachelours of Arts",
+      "startDate": "2017-09-01",
+      "endDate": "2021-08-01",
+      "score": "First Class Honours",
+      "courses": [
+        "A106MC - Design Your Own Project",
+        "110SAM - Internal Business Relations",
+        "148HRM - Managing People",
+        "105MKT - Marketing Essentials",
+        "108SAM - Quantitative Methods for Business",
+        "117ECN - The Economic Environment of Business",
+        "120SAM - Continuing Professional Development 1",
+        "2000ACC - Principles of Business Accounting",
+        "240SAM - Supply Chain and Operations Management",
+        "A203IAE - Making Money On-Line",
+        "211MKT - Buyer Behaviour",
+        "220SAM - Continuing Professional Development 2",
+        "247SAM - Exploring Business Strategy",
+        "251FIN - Introduction to Financial Services",
+        "344SAM - Project Management",
+        "361SAM - Contemporary Business Strategy",
+        "A320DEL - Absolute Beginners' German 3",
+        "320SSL - Continuing Professional Development 3",
+        "348SAM - Managing Change",
+        "352SAM - Business Dissertation",
+        "353FIN - International Finance"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "DeepWire: Spherical Coordinate-Based Deep Learning for Accurate Guidewire Shape Reconstruction",
+      "publisher": "International Conference on Biomedical Signal and Image Processing (ICBIP)",
+      "releaseDate": "2024-09",
+      "summary": "Developed a novel deep learning network for 3D reconstruction of guidewire shapes in endovascular surgery applications, leveraging spherical coordinates to achieve high accuracy and outperform traditional methods with state-of-the-art performance metrics."
+    },
+    {
+      "name": "3D Guidewire Shape Reconstruction from Monoplane Fluoroscopic Images",
+      "publisher": "International Conference on Robot Intelligence Technology and Applications (RiTA)",
+      "website": "https://arxiv.org/abs/2311.11209",
+      "releaseDate": "2023-11-13",
+      "summary": "We propose a novel method to reconstruct 3D shapes from monoplane fluoroscopic images, achieving state-of-the-art results on the 3D Guidewire dataset."
+    },
+    {
+      "name": "Cathsim: An open-source simulator for autonomous cannulation",
+      "publisher": "Transactions on Medical Robotics and Bionics (T-MRB)",
+      "releaseDate": "2022-08-02",
+      "website": "https://ieeexplore.ieee.org/document/10587130",
+      "summary": "An open-source simulator has been introduced to advance machine learning for autonomous endovascular navigation, offering high-fidelity catheter and aorta simulation with real-time force feedback."
+    },
+    {
+      "name": "Autonomous Catheterization with Open-source Simulator and Expert Trajectory",
+      "publisher": "Elsevier (Handbook of Robotic and Image-Guided Surgery)",
+      "website": "https://arxiv.org/abs/2401.09059",
+      "releaseDate": "2025-01-01",
+      "summary": "Developed and introduced CathSim, the first open-source simulator for endovascular intervention, addressing limitations in autonomous catheterization research. Validated the simulator against real robotic systems and demonstrated its effectiveness in training machine learning algorithms for endovascular navigation tasks. The work accelerates research in autonomous catheterization by providing a cost-effective and accessible tool for real-time performance testing and algorithm development."
+    },
+    {
+      "name": "Autonomous Catheterization with Open-source Simulator and Expert Trajectory",
+      "publisher": "arXiv preprint arXiv:2401.09059",
+      "website": "https://arxiv.org/abs/2401.09059",
+      "releaseDate": "2024-01-01",
+      "summary": "Developed and introduced CathSim, the first open-source simulator for endovascular intervention, addressing limitations in autonomous catheterization research. Validated the simulator against real robotic systems and demonstrated its effectiveness in training machine learning algorithms for endovascular navigation tasks. The work accelerates research in autonomous catheterization by providing a cost-effective and accessible tool for real-time performance testing and algorithm development."
+    },
+    {
+      "name": "Translating Simulation Images to X-ray Images via Multi-Scale Semantic Matching",
+      "publisher": "arXiv preprint arXiv:2304.07693",
+      "releaseDate": "2023-04-16",
+      "website": "https://arxiv.org/abs/2304.07693",
+      "summary": "A new method is proposed to convert endovascular simulator images to X-ray-like images, emphasizing structural integrity through multi-scale semantic matching, outperforming existing techniques and accompanied by a new benchmark dataset and open-source code."
+    },
+    {
+      "name": "Unsupervised Adversarial Domain Adaptation for Sim-to-Real Transfer of Tactile Images",
+      "publisher": "IEEE Transactions on Instrumentation and Measurement",
+      "releaseDate": "2023-04-20",
+      "website": "https://ieeexplore.ieee.org/abstract/document/10106009",
+      "summary": "ACTNet, an unsupervised adversarial network, is proposed for tactile image transfer, using correlative attention and task-related constraints to enhance sim-to-real transfer, achieving 92.85% accuracy in real-world classification without real labels."
+    },
+    {
+      "name": "Reducing tactile sim2real domain gaps via deep texture generation networks",
+      "publisher": "International Conference on Robotics and Automation (ICRA)",
+      "releaseDate": "2022-05-23",
+      "website": "https://ieeexplore.ieee.org/abstract/document/9811801",
+      "summary": "Engineered a neural network that synthesizes realistic textures on simulated tactile images, targeting only contact areas to enhance realism and reduce the Sim2Real accuracy gap in robotic sensing tasks."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technical Skills",
+      "keywords": [
+        "Machine Learning",
+        "Algorithms",
+        "Data Mining",
+        "Data Visualization",
+        "Artificial Intelligence",
+        "Database Systems"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": ["Python", "Bash", "HTML", "CSS", "SQL", "JavaScript"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["VIM", "Docker", "Linux", "Git", "Jupyter Notebooks"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Data Science Foundations: Data Mining",
+      "date": "2020-5",
+      "issuer": "National Association of State Boards of Accountancy (NASBA)",
+      "url": "https://www.linkedin.com/learning/certificates/a28e6dad75aa31f46c8ab097775acadaa8fd59c8f57bf20e0479d6685469274d?trk=share_certificate"
+    },
+    {
+      "name": "Learning Data Governance (2016)",
+      "date": "2020-5",
+      "issuer": "LinkedIn",
+      "url": "https://www.linkedin.com/learning/certificates/732c07f97b1ba0e4ff71937505e780b83b132fd2659a3072a76b7dcdbc257758?trk=share_certificate"
+    },
+    {
+      "name": "Statistics Foundations: 1",
+      "date": "2020-5",
+      "issuer": "National Association of State Boards of Accountancy (NASBA)",
+      "url": "https://www.linkedin.com/learning/certificates/ac33a631eb5115e8ea57cb8a3d0f3b42611506ecf4e3035c2656ff634d2c62ec?trk=share_certificate"
+    },
+    {
+      "name": "Data Science Foundations: Fundamentals",
+      "date": "2020-5",
+      "issuer": "National Association of State Boards of Accountancy (NASBA)",
+      "url": "https://www.linkedin.com/learning/certificates/8eb3f064c76c82a5998715fb3035e09cc69289d39f84606f2a5fee24cf2c0487?trk=share_certificate"
+    },
+    {
+      "name": "Introduction to Computer Science with Python",
+      "date": "2023-5",
+      "issuer": "Massachusetts Technology University",
+      "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"
+    },
+    {
+      "name": "How to Code: Simple/Complex Data",
+      "date": "2023-6",
+      "issuer": "University of British Columbia"
+    },
+    {
+      "name": "Programming Languages",
+      "date": "2023-7",
+      "issuer": "University of Washington",
+      "url": "https://www.coursera.org/account/accomplishments/verify/BNL39WNKASEG"
+    },
+    {
+      "name": "Algorithms",
+      "issuer": "Princeton University",
+      "date": "2023-10",
+      "url": "https://www.coursera.org/learn/algorithms-part1"
+    },
+    {
+      "name": "The Odin Project",
+      "issuer": "The Odin Project",
+      "date": "2024-5",
+      "url": "https://www.theodinproject.com/dashboard"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports & Fitness",
+      "keywords": [
+        "Bouldering",
+        "Gymnastic Rings",
+        "Hiking",
+        "Calisthenics",
+        "Sports Nutrition",
+        "Mesocycle Programming"
+      ]
+    },
+    {
+      "name": "Technology",
+      "keywords": [
+        "Linux Configuration",
+        "Neovim Customization",
+        "Tiling Window Manager",
+        "Ergonomic Keyboards",
+        "Web Development",
+        "Automation Scripting"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Memory Game",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-01",
+      "description": "Description...",
+      "highlights": ["React", "JavaScript", "Effects"],
+      "url": "https://memory-tudorjnu.vercel.app/"
+    },
+
+    {
+      "name": "Tic Tac Toe",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-01",
+      "description": "Description...",
+      "highlights": ["JavaScript", "HTML", "CSS"],
+      "url": "https://tudorjnu.github.io/tic-tac-toe/"
+    },
+
+    {
+      "name": "Weather App",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-01",
+      "description": "Description...",
+      "highlights": ["JavaScript", "HTML", "CSS", "Webpack"],
+      "url": "https://tudorjnu.github.io/weather-app/"
+    },
+
+    {
+      "name": "Etch-a-Sketch",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-01",
+      "description": "Description...",
+      "highlights": ["JavaScript", "HTML", "CSS"],
+      "url": "https://tudorjnu.github.io/etch-a-sketch/"
+    },
+
+    {
+      "name": "Calculator",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-01",
+      "description": "Description...",
+      "highlights": ["JavaScript", "HTML", "CSS"],
+      "url": "https://tudorjnu.github.io/calculator/"
+    }
+  ]
+}
