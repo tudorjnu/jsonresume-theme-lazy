@@ -28,6 +28,9 @@ function serve() {
   });
 
   watch("./src/**/*.scss", series(css, html));
+  watch("./src/scss/sections/*.scss", series(css, html));
+  watch("./src/scss/*.scss", series(css, html));
+  watch("./src/*.scss", series(css, html));
   watch(["./src/**/*.pug", "./resume.json"], html);
   bs.watch("./dist/*.html").on("change", bs.reload);
 }

@@ -35,8 +35,8 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia",
-    "Times New Roman", "Arial", "Roboto", Times, serif;
+  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia", "Arial",
+    "Roboto";
   color: colours.$neutral-900;
   text-align: justify;
   font-size: variables.$font-size-base;
@@ -66,19 +66,6 @@ h5 {
   font-weight: bold;
 }
 
-hr {
-  flex-grow: 1;
-  height: 2px;
-  background-color: colours.$neutral-700;
-  color: colours.$neutral-700;
-  align-self: center;
-  margin: 0 0 0 variables.$font-size-3xl;
-}
-
-br {
-  line-height: 0;
-}
-
 .section-container {
   .section-title {
     display: flex;
@@ -90,4 +77,13 @@ br {
 
 .date {
   font-size: variables.$font-size-sm;
+}
+
+hr {
+  flex-grow: 1;
+  height: 3pt;
+  background-color: colours.$neutral-700;
+  color: colours.$neutral-700;
+  align-self: center;
+  margin: 0 0 0 variables.$font-size-3xl;
 }
