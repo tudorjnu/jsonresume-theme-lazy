@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
+@use "scss/normalize";
 @use "scss/colours";
 @use "scss/variables";
 @use "scss/mixins";
-@use "scss/normalize";
-@use "scss/html";
-@use "scss/pdf";
 @use "scss/global";
 @use "scss/utils";
+@use "scss/print";
+
 // @use "scss/markdown";
 
 @use "scss/sections/header";

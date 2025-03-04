@@ -12,7 +12,6 @@ a {
   text-decoration: none;
 
   &[href] {
-    // text-decoration: underline;
     text-decoration-color: color.adjust(variables.$text-color, $lightness: 40%);
   }
 }
@@ -30,60 +29,49 @@ li {
   }
 }
 
-.content {
-  width: variables.$content-width;
-  height: auto;
-  padding: 0 50px;
-  margin: 0 auto;
-  font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia", "Arial",
-    "Roboto";
-  color: colours.$neutral-900;
-  text-align: justify;
-  font-size: variables.$font-size-base;
-  line-height: variables.$line-height-base;
-}
-
 h2 {
-  font-size: variables.$font-size-xl;
-  line-height: variables.$line-height-xl;
+  font-size: variables.$font-size-3xl;
   font-weight: bold;
 }
 
 h3 {
-  font-size: variables.$font-size-3xl;
-  line-height: variables.$line-height-3xl;
-  font-weight: bold;
-}
-
-h4 {
   font-size: variables.$font-size-lg;
   font-weight: bold;
 }
 
-h5 {
+h4 {
+  font-size: variables.$font-size-base;
+  font-weight: bold;
+}
+
+hr {
+  flex-grow: 1;
+  align-self: center;
+  // TODO: make this dynamic
+  border-top: 2px solid colours.$neutral-700;
+  margin: 0 0 0 variables.$font-size-2xl;
+}
+
+.content {
+  width: variables.$content-width;
   font-size: variables.$font-size-base;
   line-height: variables.$line-height-base;
-  font-weight: bold;
+  color: colours.$neutral-900;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: "Times New Roman", "Open Sans", "Helvetica", "Arial", "Roboto";
+  text-align: justify;
 }
 
 .section-container {
   .section-title {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: variables.$font-size-xl 0 0 0;
+    margin: variables.$space-md 0 variables.$space-xs 0;
   }
 }
 
 .date {
   font-size: variables.$font-size-sm;
-}
-
-hr {
-  flex-grow: 1;
-  height: 3pt;
-  background-color: colours.$neutral-700;
-  color: colours.$neutral-700;
-  align-self: center;
-  margin: 0 0 0 variables.$font-size-3xl;
 }

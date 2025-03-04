@@ -21,7 +21,6 @@ const calcLocation = (location) => {
   if (!location) return null;
 
   const { city, countryCode } = location;
-  console.log(city);
   const country = countryCode
     ? iso.whereAlpha2(countryCode)?.country || countryCode
     : null;

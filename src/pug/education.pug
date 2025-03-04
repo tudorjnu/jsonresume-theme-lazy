@@ -1,22 +1,26 @@
 if helper.validArray(resume.education)
   div.section-container
     div.section-title
-      h3 Education
+      h2 Education
       hr
-    each edu in resume.education
-      div.education-entry.no-break
-        div.date
-          = helper.calcDate(edu.startDate) + ' -'
-          br
-          = helper.calcDate(edu.endDate)
-        h4= edu.studyType + " in " + edu.area
-        span.institution
-          a(href=edu.url)= edu.institution
-        if helper.validArray(edu.courses)
-          p
-            strong Courses:
-            = ' ' + edu.courses.join(', ')
-        if helper.validArray(edu.highlights)
-          ul.highlights.margin-text-4.no-break
-            each highlight in edu.highlights
-              li!= helper.mdToHtml(highlight)
+    div
+      each edu in resume.education
+        div.education-entry.no-break.margin-container-md
+          div.date
+            = helper.calcDate(edu.startDate) + ' -'
+            br
+            = helper.calcDate(edu.endDate)
+          h3= edu.studyType + " in " + edu.area
+          span.institution
+            h3
+              a(href=edu.url)= edu.institution
+          if edu.summary
+            p.summary= edu.summary
+          if helper.validArray(edu.courses)
+            p
+              strong Courses:
+              = ' ' + edu.courses.join(', ')
+          if helper.validArray(edu.highlights)
+            ul.highlights
+              each highlight in edu.highlights
+                li!= helper.mdToHtml(highlight)

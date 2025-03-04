@@ -3,7 +3,7 @@
 
 // Base space unit — this is the core
 $space-base: 8px;
-$font-size: 11pt;
+$font-size: 12pt;
 $text-color: colours.$neutral-950;
 
 // space Scale (derived from the base)
@@ -30,6 +30,7 @@ $font-size-5xl: 3rem; // 48px
 $line-height-xs: 1.25;
 $line-height-sm: 1.35;
 $line-height-base: 1.5;
+$line-height-md: 1.5;
 $line-height-lg: 1.6;
 $line-height-xl: 1.75;
 $line-height-2xl: 2;
@@ -46,6 +47,6 @@ $content-width: 1000px;
 $content-main-percentage: 70%;
 $content-side-percentage: 100% - $content-main-percentage;
 
-// Header Sizes (specific overrides if needed)
+// Header Sizes
 $header-name-font-size: 2.5rem; // 40px
 $header-line-font-size: 1.25rem; // 20px

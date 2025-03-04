@@ -3,34 +3,32 @@
 .work-entry {
   display: grid;
   grid-template-columns: 100px 1fr auto;
-  grid-template-areas:
-    "date title company"
-    "date summary summary"
-    "date highlights highlights";
-
-  break-inside: avoid;
 
   .date {
-    grid-area: date;
     text-align: left;
-  }
-
-  .title {
-    grid-area: title;
-    margin-right: 1rem;
+    grid-row: span 10;
   }
 
   .company {
-    grid-area: company;
-    align-self: center;
+    align-self: start;
+    text-align: right;
   }
 
-  .summary {
-    grid-area: summary;
-    margin: 0;
+  .summary,
+  .highlights {
+    grid-column: 2 / span 2;
+    margin: 4px 0 0;
   }
 
   .highlights {
-    grid-area: highlights;
+    padding-left: 0;
+
+    li {
+      margin-left: 16px;
+    }
+  }
+
+  p {
+    margin: 0;
   }
 }

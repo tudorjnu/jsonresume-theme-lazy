@@ -1,64 +1,24 @@
 @use "mixins";
 @use "variables";
 
-// Margin Containers (derived from font size scale)
 .margin-container-xs:not(:first-child) {
-  margin-top: variables.$space-sm; // 14px
+  margin-top: variables.$space-xs;
 }
 
-.margin-container-1:not(:first-child) {
-  margin-top: variables.$space-sm; // 14px
+.margin-container-sm:not(:first-child) {
+  margin-top: variables.$space-sm;
 }
 
-.margin-container-2:not(:first-child) {
-  margin-top: variables.$space-lg; // 18px
+.margin-container-md:not(:first-child) {
+  margin-top: variables.$space-md;
 }
 
-.margin-container-3:not(:first-child) {
-  margin-top: variables.$space-xl; // 20px
+.margin-container-lg:not(:first-child) {
+  margin-top: variables.$space-lg;
 }
 
-.margin-container-4:not(:first-child) {
-  margin-top: variables.$space-2xl; // 24px
-}
-
-// Padding Containers (derived from space scale)
-.padding-container-2 {
-  padding: variables.$space-md 0; // 16px
-}
-
-.padding-top-container-2 {
-  padding-top: variables.$space-md; // 16px
-}
-
-.padding-bottom-container-2 {
-  padding-bottom: variables.$space-md; // 16px
-}
-
-// Text Margins (derived using your mixin and custom fixed values)
-.margin-text-1 {
-  @include mixins.margin-text(2px);
-}
-
-.margin-text-2 {
-  @include mixins.margin-text(4px);
-}
-
-.margin-text-3 {
-  @include mixins.margin-text(6px);
-}
-
-.margin-text-4 {
-  @include mixins.margin-text(8px);
-}
-
-.margin-text-5 {
-  @include mixins.margin-text(14px);
-}
-
-// Page Break Control (these don’t change)
-.no-break {
-  break-inside: avoid;
+.margin-container-xl:not(:first-child) {
+  margin-top: variables.$space-xl;
 }
 
 .no-alone-1 {
@@ -69,7 +29,6 @@
   @include mixins.no-alone(150px);
 }
 
-// Typography Utilities (derived from font size + line height scale)
 .text-xs {
   font-size: variables.$font-size-xs;
   line-height: variables.$line-height-xs;

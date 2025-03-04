@@ -1,5 +1,10 @@
 @use "variables";
 
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0;
+}
+
 @media not print {
   body {
     margin: variables.$space-md 0 variables.$space-md 0;
