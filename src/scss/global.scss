@@ -1,8 +1,9 @@
-@use "variables";
 @use "sass:color";
+@use "variables";
+@use "colours";
 
 html {
-  font-size: variables.$base-font-size;
+  font-size: variables.$font-size;
 }
 
 a {
@@ -18,11 +19,11 @@ a {
 
 p,
 q {
-  line-height: variables.$line-height-1;
+  line-height: variables.$line-height-xs;
 }
 
 li {
-  line-height: variables.$line-height-2;
+  line-height: variables.$line-height-sm;
 
   &:first-child {
     margin-top: 0;
@@ -36,7 +37,7 @@ li {
   margin: 0 auto;
   font-family: "Times New Roman", "Open Sans", "Helvetica", "Georgia",
     "Times New Roman", "Arial", "Roboto", Times, serif;
-  color: variables.$neutral-900;
+  color: colours.$neutral-900;
   text-align: justify;
   font-size: variables.$font-size-base;
   line-height: variables.$line-height-base;
@@ -68,10 +69,14 @@ h5 {
 hr {
   flex-grow: 1;
   height: 2px;
-  background-color: variables.$neutral-700;
-  color: variables.$neutral-700;
+  background-color: colours.$neutral-700;
+  color: colours.$neutral-700;
   align-self: center;
   margin: 0 0 0 variables.$font-size-3xl;
+}
+
+br {
+  line-height: 0;
 }
 
 .section-container {
@@ -83,6 +88,6 @@ hr {
   }
 }
 
-.container > *:not(:first-child) {
-  margin-top: variables.$font-size-sm;
+.date {
+  font-size: variables.$font-size-sm;
 }

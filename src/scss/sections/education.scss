@@ -3,26 +3,32 @@
 .education-entry {
   display: grid;
   grid-template-columns: 100px 1fr auto;
-  break-inside: avoid;
 
   .date {
     text-align: left;
-  }
-
-  .title {
-    margin-right: 20px;
+    grid-row: span 10;
   }
 
   .institution {
-    align-self: center;
+    align-self: start;
+    text-align: right;
+  }
+
+  .summary,
+  .highlights {
+    grid-column: 2 / span 2;
+    margin: 4px 0 0;
   }
 
   .highlights {
-    grid-column: span 2;
+    padding-left: 0;
+
+    li {
+      margin-left: 16px;
+    }
   }
 
   p {
-    grid-column: span 2;
     margin: 0;
   }
 }

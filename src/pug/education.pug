@@ -9,7 +9,7 @@ if helper.validArray(resume.education)
           = helper.calcDate(edu.startDate) + ' -'
           br
           = helper.calcDate(edu.endDate)
-        h4.title= edu.studyType + " in " + edu.area
+        h4= edu.studyType + " in " + edu.area
         span.institution
           a(href=edu.url)= edu.institution
         if helper.validArray(edu.courses)

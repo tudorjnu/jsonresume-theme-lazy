@@ -1,35 +1,42 @@
-div(class='header-container')
-  div(class='title')
-    span(class='name')=resume.basics.name
-    span(class='label text-3xl')=resume.basics.label
+div.header-container
+  - var basics = resume.basics
+  div.title
+    span.name= basics.name
+    span.label= basics.label
 
-  ul(class='profiles')
-    if resume.basics.location
-      li(class='profile')
-        i(class='fas fa-map-marker-alt')
-        span=helper.calcLocation(resume.basics.location)
+  ul.profiles
+    - var { location, phone, email, website, profiles } = basics;
 
-    if resume.basics.phone
-      li(class='profile')
-        i(class='fas fa-phone')
-        a(href='tel:' + resume.basics.phone)=helper.formatPhone(resume.basics.phone)
+    if location
+      li.profile
+        i.fas.fa-map-marker-alt
+        span= helper.calcLocation(location)
 
-    if resume.basics.email
-      li(class='profile')
-        i(class='fas fa-envelope')
-        a(href='mailto:' + resume.basics.email)=resume.basics.email
+    if phone
+      li.profile
+        i.fas.fa-phone
+        a(href='tel:' + phone)= helper.formatPhone(phone)
 
-    if resume.basics.website
-      li(class='profile')
-        i(class='fas fa-globe')
-        a(href=resume.basics.website)=helper.formatLink(resume.basics.website)
+    if email
+      li.profile
+        i.fas.fa-envelope
+        a(href='mailto:' + email)= email
 
-    each profile in resume.basics.profiles
-      li(class='profile')
-        if profile.network == "Github"
-          i(class='fab fa-github')
-          a(href=profile.url)="github.com/" + profile.username
-        else if profile.network == "LinkedIn"
-          i(class='fab fa-linkedin')
-          a(href=profile.url)="linkedin.com/in/" + profile.username
+    if website
+      li.profile
+        i.fas.fa-globe
+        a(href=website)= helper.formatLink(website)
 
+    each profile in profiles
+      li.profile
+        -
+          var iconMap = {
+            Github: 'fab fa-github',
+            LinkedIn: 'fab fa-linkedin',
+            Soundcloud: 'fab fa-soundcloud'
+          };
+
+        - var iconClass = iconMap[profile.network] || 'fas fa-link';
+
+        i(class=iconClass)
+        a(href=profile.url)= profile.url.replace(/^https?:\/\//, '')

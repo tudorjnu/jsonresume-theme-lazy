@@ -25,15 +25,13 @@
 
   .profiles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1em 1.5em;
+    grid-template-columns: 1fr auto;
+    gap: variables.$space-sm variables.$space-sm;
 
     align-items: stretch;
     align-self: stretch;
     grid-area: profiles;
     list-style: none;
-    font-size: variables.$font-size-base;
 
     .profile {
       display: flex;
@@ -43,7 +41,6 @@
 
       i {
         display: flex;
-        font-size: variables.$font-size-base;
         justify-content: center;
         align-items: center;
       }

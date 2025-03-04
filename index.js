@@ -1,5 +1,5 @@
 const pug = require("pug");
-const helper = require("./assets/helper");
+const helper = require("./src/lib/helper");
 const path = require("path");
 
 const render = (resume) =>

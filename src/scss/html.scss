@@ -2,7 +2,7 @@
 
 @media not print {
   body {
-    margin: variables.$space-3 0 variables.$space-4 0;
+    margin: variables.$space-md 0 variables.$space-md 0;
   }
 }
 
@@ -10,9 +10,5 @@
   .no-break {
     break-inside: avoid;
     page-break-inside: avoid;
-  }
-
-  .section {
-    break-after: avoid;
   }
 }
