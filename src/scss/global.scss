@@ -36,6 +36,7 @@ h2 {
 
 h3 {
   font-size: variables.$font-size-lg;
+  line-height: variables.$line-height-sm;
   font-weight: bold;
 }
 
@@ -49,7 +50,7 @@ hr {
   align-self: center;
   // TODO: make this dynamic
   border-top: 2px solid colours.$neutral-700;
-  margin: 0 0 0 variables.$font-size-2xl;
+  margin-left: variables.$font-size-2xl;
 }
 
 .content {
