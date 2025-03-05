@@ -1,4 +1,4 @@
-if helper.validArray(resume.projects)
+if helper.isValidArray(resume.projects)
   div(class='margin-container-2')
     div(class='section')
       h3 Projects
@@ -6,7 +6,7 @@ if helper.validArray(resume.projects)
     div(class='container')
       each project in resume.projects
         div(class='projects-entry no-break')
-          span(class="date")= helper.calcDate(project.startDate)
+          span(class="date")= helper.formatDate(project.startDate)
           h4(class="title")=project.name
           ul(class="tags")
             each tag in project.highlights

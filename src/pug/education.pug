@@ -1,26 +1,26 @@
-if helper.validArray(resume.education)
+if helper.isValidArray(resume.education)
   div.section-container
     div.section-title
       h2 Education
       hr
-    div
+    div.margin-container-md
       each edu in resume.education
-        div.education-entry.no-break.margin-container-md
+        div.education-entry.no-break
           div.date
-            = helper.calcDate(edu.startDate) + ' -'
+            = helper.formatDate(edu.startDate) + ' -'
             br
-            = helper.calcDate(edu.endDate)
+            = helper.formatDate(edu.endDate)
           h3= edu.studyType + " in " + edu.area
           span.institution
             h3
               a(href=edu.url)= edu.institution
           if edu.summary
             p.summary= edu.summary
-          if helper.validArray(edu.courses)
+          if helper.isValidArray(edu.courses)
             p
               strong Courses:
               = ' ' + edu.courses.join(', ')
-          if helper.validArray(edu.highlights)
+          if helper.isValidArray(edu.highlights)
             ul.highlights
               each highlight in edu.highlights
                 li!= helper.mdToHtml(highlight)

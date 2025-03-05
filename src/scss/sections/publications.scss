@@ -2,38 +2,21 @@
 
 .publication-entry {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-areas:
-    "date title"
-    "date authors"
-    "date publisher"
-    "date summary";
-
-  font-size: variables.$font-size-base;
-  line-height: variables.$line-height-base;
+  grid-template-columns: 100px 1fr auto;
 
   .date {
     text-align: left;
-    grid-area: date;
-    font-size: variables.$font-size-base;
-    line-height: variables.$line-height-base;
+    grid-row: span 10;
   }
 
-  .title {
-    grid-area: title;
-  }
-
-  .publisher {
-    grid-area: publisher;
-  }
-
-  .authors {
-    grid-area: authors;
+  .publisher,
+  .authors,
+  .summary {
+    grid-column: 2 / span 2;
+    margin: 4px 0 0;
   }
 
   .summary {
-    margin-top: variables.$font-size-xs;
-    grid-area: summary;
-    margin-top: 0.5em;
+    padding-left: 0;
   }
 }

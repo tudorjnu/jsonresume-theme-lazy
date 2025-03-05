@@ -1,23 +1,23 @@
 @use "mixins";
 @use "variables";
 
-.margin-container-xs:not(:first-child) {
+.margin-container-xs > *:not(:first-child) {
   margin-top: variables.$space-xs;
 }
 
-.margin-container-sm:not(:first-child) {
+.margin-container-sm > *:not(:first-child) {
   margin-top: variables.$space-sm;
 }
 
-.margin-container-md:not(:first-child) {
+.margin-container-md > *:not(:first-child) {
   margin-top: variables.$space-md;
 }
 
-.margin-container-lg:not(:first-child) {
+.margin-container-lg > *:not(:first-child) {
   margin-top: variables.$space-lg;
 }
 
-.margin-container-xl:not(:first-child) {
+.margin-container-xl > *:not(:first-child) {
   margin-top: variables.$space-xl;
 }
 

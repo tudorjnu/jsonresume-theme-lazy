@@ -1,4 +1,4 @@
-if helper.validArray(resume.certificates)
+if helper.isValidArray(resume.certificates)
   div(class='margin-container-2')
     div(class='section')
       h3 Certificates
@@ -7,7 +7,7 @@ if helper.validArray(resume.certificates)
       each certificate in resume.certificates
         div(class='no-break')
           div(class='publication-entry')
-            span(class="date")= helper.calcDate(certificate.date)
+            span(class="date")= helper.formatDate(certificate.date)
             h4(class="title")=certificate.name
             span(class="issuer")
               a(href=certificate.url)=certificate.issuer

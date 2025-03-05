@@ -1,17 +1,17 @@
-if helper.validArray(resume.publications)
+if helper.isValidArray(resume.publications)
   div.section-container
     div.section-title
-      h3 Publications
+      h2 Publications
       hr
+    div.margin-container-md
     each publication in resume.publications
       div.publication-entry
-        div.date= helper.calcDate(publication.releaseDate)
-        div.content
-          h4.title= publication.name
-          if publication.authors
-            div.authors!= helper.mdToHtml(publication.authors)
-          if publication.website && publication.publisher
-            div.publisher
-              a(href=publication.website)= publication.publisher
-          if publication.summary
-            div.summary!= helper.mdToHtml(publication.summary)
+        div.date= helper.formatDate(publication.releaseDate)
+        h3.title= publication.name
+        if publication.authors
+          div.authors!= helper.mdToHtml(publication.authors)
+        if publication.website && publication.publisher
+          div.publisher
+            a(href=publication.website)= publication.publisher
+        if publication.summary
+          div.summary!= helper.mdToHtml(publication.summary)

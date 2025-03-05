@@ -1,15 +1,16 @@
-if helper.validArray(resume.skills)
-  div(class='section-container')
-    div(class='section-title')
+if helper.isValidArray(resume.skills)
+  div.section-container
+    div.section-title
       h2.name Skills
       hr
-    each skill in resume.skills
-      div(class='skill')
-        p
-          strong
-            = skill.name
-            if skill.level
-              = ' (' + skill.level + ')'
-            = ': '
-          if helper.validArray(skill.keywords)
-            = skill.keywords.join(", ")
+    div.margin-container-xs
+      each skill in resume.skills
+        div.skill
+          p
+            strong
+              = skill.name
+              if skill.level
+                = ' (' + skill.level + ')'
+              = ': '
+            if helper.isValidArray(skill.keywords)
+              = skill.keywords.join(", ")

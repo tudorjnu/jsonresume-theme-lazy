@@ -1,4 +1,4 @@
-if helper.validArray(resume.work)
+if helper.isValidArray(resume.work)
   div(class='section')
     h3.name Volunteering
     hr.line
@@ -6,14 +6,14 @@ if helper.validArray(resume.work)
     each vol in resume.volunteer
       div(class='work-entry')
         div(class="date")
-          | #{helper.calcDate(vol.startDate)} -
+          | #{helper.formatDate(vol.startDate)} -
           br
-          | #{helper.calcDate(vol.endDate)}
+          | #{helper.formatDate(vol.endDate)}
         h4(class="title")= vol.position
         span(class="company")
           a(href=vol.url)=vol.organization
         p(class="summary")=vol.summary
-        if helper.validArray(vol.highlights)
+        if helper.isValidArray(vol.highlights)
           ul(class='highlights margin-text-4')
             each highlight in vol.highlights
               li!=helper.mdToHtml(highlight)

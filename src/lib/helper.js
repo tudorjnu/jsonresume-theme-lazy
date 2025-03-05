@@ -17,7 +17,7 @@ md.use(mila, {
 
 const mdToHtml = (string) => (string ? md.render(string) : "");
 
-const calcLocation = (location) => {
+const formatLocation = (location) => {
   if (!location) return null;
 
   const { city, countryCode } = location;
@@ -30,47 +30,10 @@ const calcLocation = (location) => {
   return parts.length ? parts.join(", ") : null;
 };
 
-const calcDate = (date) => {
-  return date ? beautifyDate(date) : "Present";
-};
-
-const calcDateRange = (start, end) => {
-  const array = [];
-
-  const startDate = calcDate(start);
-  const endDate = calcDate(end);
-
-  if (startDate && endDate) {
-    array.push(startDate, endDate);
-  } else if (startDate) {
-    array.push(startDate, "Present");
-  } else if (endDate) {
-    array.push(endDate);
-  } else {
-    return null;
-  }
-
-  return array.join(" - ");
-};
-
 const beautifyDate = (date) => moment(date, "YYYY-MM-DD").format("MMM YYYY");
 
-const beautifyArray = (separator, array) =>
-  array.filter((x) => x).join(separator);
-
-const arrayToPhrase = (array) => {
-  let str = "";
-  const a = array.filter((x) => x);
-
-  if (a.length === 1) {
-    str = a[0];
-  } else if (a.length === 2) {
-    str = a.join(" and ");
-  } else if (a.length > 2) {
-    str = a.slice(0, -1).join(", ") + " and " + a.slice(-1);
-  }
-
-  return str.charAt(0).toUpperCase() + str.slice(1);
+const formatDate = (date) => {
+  return date ? beautifyDate(date) : "Present";
 };
 
 const formatPhone = (string) => {
@@ -87,22 +50,13 @@ const formatLink = (string) => {
   return string.replace(/https?:\/\//g, "");
 };
 
-const validArray = (array) => array !== undefined && array.length > 0;
-
-const parseModules = (modules) => {
-  return modules;
-};
+const isValidArray = (array) => array !== undefined && array.length > 0;
 
 module.exports = {
   mdToHtml,
-  calcLocation,
-  calcDate,
-  calcDateRange,
-  beautifyDate,
-  beautifyArray,
-  arrayToPhrase,
-  validArray,
+  isValidArray,
+  formatLocation,
+  formatDate,
   formatPhone,
   formatLink,
-  parseModules,
 };

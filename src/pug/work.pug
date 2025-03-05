@@ -1,22 +1,22 @@
-if helper.validArray(resume.work)
+if helper.isValidArray(resume.work)
   div.section-container
     div.section-title
       h2 Work
       hr
-    div
+    div.margin-container-md
       each work in resume.work
-        div.work-entry.margin-container-md
+        div.work-entry
           div.date
-            = helper.calcDate(work.startDate) + ' -'
+            = helper.formatDate(work.startDate) + ' -'
             br
-            = helper.calcDate(work.endDate)
+            = helper.formatDate(work.endDate)
           h3.title= work.position
           span.company
             h3
               a(href=work.url)= work.company
           if work.summary
             p.summary= work.summary
-          if helper.validArray(work.highlights)
+          if helper.isValidArray(work.highlights)
             ul.highlights
               each highlight in work.highlights
                 li!= helper.mdToHtml(highlight)
