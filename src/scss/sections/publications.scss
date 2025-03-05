@@ -9,11 +9,13 @@
     grid-row: span 10;
   }
 
-  .publisher,
   .authors,
   .summary {
     grid-column: 2 / span 2;
-    margin: 4px 0 0;
+  }
+
+  .title {
+    text-align: left;
   }
 
   .summary {
