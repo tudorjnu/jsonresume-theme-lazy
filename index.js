@@ -3,7 +3,7 @@ const helper = require("./src/lib/helper");
 const path = require("path");
 
 const render = (resume) =>
-  pug.renderFile(path.join(__dirname, "assets", "template.pug"), {
+  pug.renderFile(path.join(__dirname, "src", "resume.pug"), {
     resume,
     helper,
   });

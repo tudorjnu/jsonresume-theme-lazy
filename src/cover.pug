@@ -4,6 +4,44 @@ html(lang="en")
     include ./head
     title=`Cover Letter – ${resume.basics.name}`
   body
-    div(class='content')
-      include pug/header
+    div.content.cover
+      div.cover-header-container
+        - var basics = resume.basics
+        div.title
+          span.name= basics.name
+          span.label= basics.label
+        ul.profiles
+          - var { location, phone, email, url, profiles } = basics;
+
+          if phone
+            li.profile
+              i.fas.fa-phone
+              a(href='tel:' + phone)= helper.formatPhone(phone)
+          if location
+            li.profile
+              i.fas.fa-map-marker-alt
+              span= helper.formatLocation(location)
+          if email
+            li.profile
+              i.fas.fa-envelope
+              a(href='mailto:' + email)= email
+          if url
+            li.profile
+              i.fas.fa-globe
+              a(href=url)= helper.formatLink(url)
+          each profile in profiles
+            li.profile
+              -
+                var iconMap = {
+                  GitHub: 'fab fa-github',
+                  LinkedIn: 'fab fa-linkedin',
+                  Soundcloud: 'fab fa-soundcloud'
+                };
+
+              - var iconClass = iconMap[profile.network] || 'fas fa-link';
+
+              i(class=iconClass)
+              a(href=profile.url)= profile.url.replace(/^https?:\/\//, '')
+      hr
       div.cover-letter-content !{coverBody}
+

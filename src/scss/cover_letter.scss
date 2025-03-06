@@ -1,0 +1,106 @@
+@use "./variables.scss";
+
+.cover {
+  font-size: variables.$font-size-2xl;
+
+  hr {
+    margin-left: 0;
+  }
+
+  line-height: 1.6;
+
+  p {
+    margin: 0 0 variables.$space-lg;
+  }
+
+  strong,
+  b {
+    font-weight: 700;
+  }
+
+  a {
+    color: #0073e6;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 1rem 0 0.5rem;
+    font-weight: 700;
+  }
+
+  ul,
+  ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid #0073e6;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+}
+
+.cover-header-container {
+  display: flex;
+  justify-content: space-between;
+  gap: variables.$space-md;
+
+  .title {
+    grid-area: title;
+    align-self: start;
+    text-align: left;
+
+    .name {
+      font-weight: bolder;
+      font-size: variables.$font-size-5xl;
+      line-height: variables.$line-height-5xl;
+    }
+
+    .label {
+      font-size: variables.$font-size-3xl;
+      line-height: variables.$line-height-3xl;
+      margin-top: 0.5em;
+    }
+  }
+
+  .profiles {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: variables.$space-sm variables.$space-sm;
+
+    align-items: stretch;
+    align-self: stretch;
+    grid-area: profiles;
+    list-style: none;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
