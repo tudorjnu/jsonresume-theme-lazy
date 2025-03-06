@@ -8,12 +8,10 @@
 @use "scss/utils";
 @use "scss/print";
 
-// @use "scss/markdown";
-
+// Sections
 @use "scss/sections/header";
 @use "scss/sections/work";
 @use "scss/sections/education";
 @use "scss/sections/publications";
+@use "scss/sections/projects";
 // @use "scss/sections/certificates";
-// @use "scss/sections/interests";
-// @use "scss/sections/projects";

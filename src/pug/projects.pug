@@ -1,13 +1,33 @@
 if helper.isValidArray(resume.projects)
-  div(class='margin-container-2')
-    div(class='section')
-      h3 Projects
+  div.section-container
+    div.section-header
+      h2 Projects
       hr
-    div(class='container')
+    div.margin-container-md
       each project in resume.projects
-        div(class='projects-entry no-break')
-          span(class="date")= helper.formatDate(project.startDate)
-          h4(class="title")=project.name
-          ul(class="tags")
-            each tag in project.highlights
-                li= `${tag}`
+        div.project-entry
+          div.date
+            = helper.formatDate(project.startDate) + ' -'
+            br
+            = helper.formatDate(project.endDate)
+          h3.title= project.name
+          span.entity
+            h3
+              if project.url
+                a(href=project.url)= project.entity
+              else
+                = project.entity
+          if project.description
+            p.description= project.description
+          if helper.isValidArray(project.keywords)
+            p.keywords
+              strong Keywords:
+              = ' ' + project.keywords.join(', ') + '.'
+          if helper.isValidArray(project.keywords)
+            p.roles
+              strong Role(s):
+              = ' ' + project.roles.join(', ') + '.'
+          if helper.isValidArray(project.highlights)
+            ul.highlights
+              each highlight in project.highlights
+                li!= helper.mdToHtml(highlight)
