@@ -15,14 +15,14 @@ function css() {
 function html() {
   const resume = JSON.parse(fs.readFileSync("./resume.json", "utf-8"));
 
-  return src("./src/template.pug")
+  return src("./src/resume.pug")
     .pipe(pug({ data: { resume, helper } }))
     .pipe(dest("./dist"));
 }
 
 function serve() {
   bs.init({
-    server: { baseDir: "./dist/", index: "template.html" },
+    server: { baseDir: "./dist/", index: "resume.html" },
     ui: false,
     open: false,
   });

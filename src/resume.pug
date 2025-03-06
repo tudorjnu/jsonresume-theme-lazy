@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    include ./head
+    title=`Resume ${resume.basics.name} – ${resume.basics.label}`
+  body
+    div(class='content')
+      include pug/header
+      include pug/summary
+      include pug/skills
+      include pug/work
+      include pug/education
+      include pug/volunteer
+      include pug/projects
+      include pug/certificates
+      include pug/awards
+      include pug/interests
+      include pug/languages
+      include pug/publications
+      include pug/references

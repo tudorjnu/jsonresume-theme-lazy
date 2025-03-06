@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+  head
+    include ./head
+    title=`Cover Letter – ${resume.basics.name}`
+  body
+    div(class='content')
+      include pug/header
+      div.cover-letter-content !{coverBody}
