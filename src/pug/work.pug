@@ -11,9 +11,9 @@ if helper.isValidArray(resume.work)
             br
             = helper.formatDate(work.endDate)
           h3.title= work.position
-          span.company
+          span.name
             h3
-              a(href=work.url)= work.company
+              a(href=work.url)= work.name
           if work.summary
             p.summary= work.summary
           if helper.isValidArray(work.highlights)
