@@ -2,93 +2,270 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
 
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
-    "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "+447000000000",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "name": "Jordan Smith",
+    "label": "Full Stack Developer",
+    "image": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "jordan.smith@example.com",
+    "phone": "+1-415-555-2673",
+    "url": "https://jordansmith.dev",
+    "summary": "I am a passionate Full Stack Developer with over 5 years of experience building scalable web applications and APIs. I specialize in JavaScript, React, and Node.js, with a strong focus on clean code and performance optimization.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
+      "address": "245 Market Street\nSuite 900",
+      "postalCode": "94105",
       "city": "San Francisco",
       "countryCode": "US",
       "region": "California"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": "https://www.twitter.com"
+        "network": "LinkedIn",
+        "username": "jordan-smith-dev",
+        "url": "https://linkedin.com/in/jordan-smith-dev"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "GitHub",
+        "username": "jordansmith",
+        "url": "https://github.com/jordansmith"
+      },
+      {
+        "network": "Twitter",
+        "username": "jsmith_dev",
+        "url": "https://twitter.com/jsmith_dev"
       }
     ]
   },
 
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "name": "TechSphere Inc.",
+      "location": "San Francisco, CA",
+      "description": "Enterprise SaaS solutions provider",
+      "position": "Senior Full Stack Developer",
+      "url": "https://www.techsphere.com",
+      "startDate": "2021-03-01",
+      "endDate": "2025-02-28",
+      "summary": "Led development of core product features, collaborating across teams to deliver scalable and secure web applications.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Architected and launched a microservices infrastructure, reducing deployment time by 40%",
+        "Mentored junior developers and improved onboarding process",
+        "Optimized performance of critical APIs, improving response times by 35%",
+        "Led migration from legacy system to modern React front-end and GraphQL back-end"
+      ]
+    },
+    {
+      "name": "CodeForge Solutions",
+      "location": "Austin, TX",
+      "description": "Custom software development consultancy",
+      "position": "Full Stack Developer",
+      "url": "https://www.codeforge.io",
+      "startDate": "2018-07-01",
+      "endDate": "2021-02-28",
+      "summary": "Built client projects from scratch, focusing on modern web development stacks and agile delivery.",
+      "highlights": [
+        "Delivered over 15 client projects on-time, spanning e-commerce, healthcare, and fintech",
+        "Built internal tooling that reduced project setup time by 50%",
+        "Integrated CI/CD pipelines into client projects for automated deployment",
+        "Spearheaded adoption of TypeScript across all new projects"
+      ]
+    },
+    {
+      "name": "NexaHealth Systems",
+      "location": "Seattle, WA",
+      "description": "Healthcare technology startup",
+      "position": "Backend Engineer",
+      "url": "https://www.nexahealth.com",
+      "startDate": "2016-05-01",
+      "endDate": "2018-06-30",
+      "summary": "Developed secure APIs and backend systems to power a telehealth platform used by thousands of patients.",
+      "highlights": [
+        "Implemented HIPAA-compliant data storage and transmission",
+        "Optimized database queries, reducing average response time by 50%",
+        "Collaborated with front-end team to design consistent API contracts",
+        "Introduced automated performance testing for all new releases"
+      ]
+    },
+
+    {
+      "name": "BrightPixel Media",
+      "location": "New York, NY",
+      "description": "Digital marketing agency",
+      "position": "Front End Developer",
+      "url": "https://www.brightpixelmedia.com",
+      "startDate": "2014-06-01",
+      "endDate": "2016-04-30",
+      "summary": "Developed interactive landing pages, campaign microsites, and rich-media ads for Fortune 500 clients.",
+      "highlights": [
+        "Built reusable components for rapid project development",
+        "Worked directly with designers to ensure pixel-perfect implementations",
+        "Optimized site performance, improving Lighthouse scores by 30%",
+        "Pioneered responsive design adoption within the agency"
+      ]
+    },
+
+    {
+      "name": "Freelance Developer",
+      "location": "Remote",
+      "description": "Independent Contractor",
+      "position": "Web Developer",
+      "url": "https://jordansmith.dev",
+      "startDate": "2012-08-01",
+      "endDate": "2014-05-31",
+      "summary": "Provided full-cycle web development services to small businesses and entrepreneurs.",
+      "highlights": [
+        "Delivered custom WordPress and Shopify sites for local businesses",
+        "Set up hosting, domain, and deployment pipelines for clients",
+        "Offered training sessions to clients on basic CMS management",
+        "Built and sold 3 custom plugins for WordPress marketplace"
       ]
     }
   ],
 
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": ["Awarded 'Teacher of the Month'"]
+      "organization": "Code for Good",
+      "position": "Volunteer Full Stack Developer",
+      "url": "https://www.codeforgood.org",
+      "startDate": "2023-04-01",
+      "endDate": "2024-02-28",
+      "summary": "Contributed to open-source projects that supported non-profits and community organizations by developing web applications and data tools.",
+      "highlights": [
+        "Built a donation tracking system for a local food bank using React and Node.js",
+        "Collaborated with designers and project managers to deliver biweekly feature updates",
+        "Mentored new volunteers to onboard them to the tech stack and project workflows"
+      ]
+    },
+    {
+      "organization": "Girls Who Code",
+      "position": "Volunteer Mentor",
+      "url": "https://www.girlswhocode.com",
+      "startDate": "2021-09-01",
+      "endDate": "2023-05-31",
+      "summary": "Mentored high school students in web development, guiding them through coding exercises and projects to help build their technical skills.",
+      "highlights": [
+        "Led weekly coding workshops focused on HTML, CSS, and JavaScript",
+        "Provided career advice and guidance to students interested in tech careers",
+        "Helped students build personal portfolio sites for college applications"
+      ]
+    },
+    {
+      "organization": "Open Source Community - SustainTech",
+      "position": "Contributing Developer",
+      "url": "https://www.sustaintech.org",
+      "startDate": "2019-01-01",
+      "endDate": "2020-12-31",
+      "summary": "Worked on open-source projects aimed at promoting sustainable technology and environmental awareness.",
+      "highlights": [
+        "Built a carbon footprint calculator as a community tool",
+        "Refactored legacy code to improve performance and maintainability",
+        "Collaborated with international developers through GitHub and Slack"
+      ]
     }
   ],
 
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
+      "institution": "Stanford University",
+      "url": "https://www.stanford.edu",
+      "area": "Computer Science",
+      "studyType": "PhD",
+      "startDate": "2017-09-01",
+      "endDate": "2022-06-15",
+      "score": "3.9/4.0",
+      "courses": [
+        "CS229 - Machine Learning",
+        "CS224N - Natural Language Processing",
+        "CS345 - Data Mining",
+        "CS276 - Information Retrieval and Web Search"
+      ]
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "url": "https://www.berkeley.edu",
+      "area": "Software Engineering",
+      "studyType": "Master",
+      "startDate": "2015-09-01",
+      "endDate": "2017-06-15",
+      "score": "3.85/4.0",
+      "courses": [
+        "CS260 - Advanced Software Engineering",
+        "EECS284 - Distributed Systems",
+        "CS294 - Topics in Full Stack Development",
+        "CS270 - Algorithms for Modern Data Models"
+      ]
+    },
+    {
+      "institution": "University of Washington",
+      "url": "https://www.washington.edu",
+      "area": "Computer Science",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL", "CS2011 - Java Introduction"]
+      "startDate": "2011-09-01",
+      "endDate": "2015-06-15",
+      "score": "3.75/4.0",
+      "courses": [
+        "CSE143 - Computer Programming II",
+        "CSE373 - Data Structures and Algorithms",
+        "CSE332 - Software Design and Implementation",
+        "CSE444 - Database Systems Internals"
+      ]
     }
   ],
 
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "title": "Innovator of the Year",
+      "date": "2023-09-15",
+      "awarder": "Tech Industry Council",
+      "summary": "Recognized for leading groundbreaking initiatives in cloud infrastructure automation."
+    },
+    {
+      "title": "Best Open Source Contributor",
+      "date": "2022-06-20",
+      "awarder": "Open Source Foundation",
+      "summary": "Awarded for significant contributions to open source Kubernetes tooling."
+    },
+    {
+      "title": "Top 50 Women in Tech",
+      "date": "2021-03-08",
+      "awarder": "Global Tech Forum",
+      "summary": "Named one of the top 50 women driving innovation in technology worldwide."
     }
   ],
 
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "Optimizing Microservices Performance in Large-Scale Systems",
+      "publisher": "IEEE Software",
+      "releaseDate": "2024-01-15",
+      "url": "https://ieeexplore.ieee.org/document/12345678",
+      "summary": "This paper explores performance bottlenecks in microservices architectures and presents strategies for improving efficiency using caching, asynchronous processing, and service mesh technologies."
+    },
+    {
+      "name": "Practical Applications of Large Language Models in Software Engineering",
+      "publisher": "ACM Transactions on Software Engineering",
+      "releaseDate": "2023-07-10",
+      "url": "https://dl.acm.org/doi/10.1145/9876543",
+      "summary": "This publication discusses the integration of LLMs into the software development lifecycle, focusing on code generation, refactoring, and automated testing."
+    },
+    {
+      "name": "Full Stack Security: Bridging the Gap Between Frontend and Backend Security Practices",
+      "publisher": "Tech Journal of Secure Development",
+      "releaseDate": "2022-09-05",
+      "url": "https://www.securedevjournal.org/articles/2022-full-stack-security",
+      "summary": "An analysis of common security oversights in full stack development and recommended practices for ensuring end-to-end application security."
+    },
+    {
+      "name": "GraphQL at Scale: Case Studies and Performance Considerations",
+      "publisher": "International Conference on Web Engineering (ICWE)",
+      "releaseDate": "2021-06-20",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-77411-0_15",
+      "summary": "This conference paper presents case studies from companies using GraphQL in production, highlighting best practices, performance pitfalls, and scalability solutions."
+    },
+    {
+      "name": "Automated Code Review Using Machine Learning: A Developer's Guide",
+      "publisher": "Journal of Software Engineering and Applications",
+      "releaseDate": "2020-03-12",
+      "url": "https://www.scirp.org/journal/paperinformation.aspx?paperid=987654",
+      "summary": "This paper proposes a machine learning model trained on historical code reviews to identify potential issues in pull requests and suggest improvements automatically."
     }
   ],
 
@@ -96,26 +273,153 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS"
+      ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": ["Mpeg", "MP4", "GIF"]
+      "name": "Backend Development",
+      "level": "Advanced",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "GraphQL",
+        "REST APIs",
+        "Database Design",
+        "Authentication"
+      ]
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Serverless",
+        "Terraform",
+        "CI/CD Pipelines"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Intermediate",
+      "keywords": [
+        "SQL",
+        "NoSQL",
+        "ETL Pipelines",
+        "BigQuery",
+        "Data Warehousing"
+      ]
+    },
+    {
+      "name": "Software Architecture",
+      "level": "Advanced",
+      "keywords": [
+        "Microservices",
+        "Event-Driven Architecture",
+        "Monorepos",
+        "Design Patterns",
+        "System Design"
+      ]
+    },
+    {
+      "name": "Machine Learning (Applied)",
+      "level": "Intermediate",
+      "keywords": [
+        "TensorFlow",
+        "scikit-learn",
+        "Natural Language Processing",
+        "ML Ops",
+        "Model Deployment"
+      ]
     }
   ],
 
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "German",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Mandarin Chinese",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Korean",
+      "fluency": "Beginner"
     }
   ],
 
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Open Source Contribution",
+      "keywords": [
+        "GitHub Projects",
+        "Open Source Sustainability",
+        "Community Collaboration"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "keywords": ["Generative AI", "Natural Language Processing", "AI Ethics"]
+    },
+    {
+      "name": "Tech Blogging",
+      "keywords": [
+        "Technical Writing",
+        "Developer Advocacy",
+        "Knowledge Sharing"
+      ]
+    },
+    {
+      "name": "Outdoor Adventures",
+      "keywords": ["Hiking", "Camping", "Trail Running"]
+    },
+    {
+      "name": "Music",
+      "keywords": ["Guitar", "Music Production", "Indie Rock"]
     }
   ],
 
@@ -123,25 +427,106 @@
     {
       "name": "Erlich Bachman",
       "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    },
+    {
+      "name": "Sundar Pichai",
+      "reference": "Working with Alex was an absolute pleasure. His deep understanding of cloud infrastructure and his proactive approach to solving complex problems significantly contributed to the success of our projects."
+    },
+    {
+      "name": "Satya Nadella",
+      "reference": "I had the privilege of managing Sarah for three years, and her leadership, technical expertise, and collaborative spirit were invaluable to our engineering team. I would highly recommend her for any senior technical role."
+    },
+    {
+      "name": "Sheryl Sandberg",
+      "reference": "John consistently demonstrated exceptional project management skills, clear communication, and a strong sense of ownership. His ability to align teams across functions was instrumental in driving our product launches."
     }
   ],
 
   "projects": [
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
+      "name": "CarbonTrack",
+      "description": "A web application for individuals and companies to track and reduce their carbon footprint.",
       "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+        "Built interactive dashboards to visualize carbon emissions data",
+        "Integrated real-time data from external environmental APIs",
+        "Developed user goal-setting features with personalized recommendations"
       ],
-      "keywords": ["GoogleMaps", "Chrome Extension", "Javascript"],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "http://missdirection.example.com",
-      "roles": ["Team lead", "Designer"],
-      "entity": "Smoogle",
+      "keywords": ["React", "Node.js", "D3.js", "AWS"],
+      "startDate": "2023-02-01",
+      "endDate": "2023-12-15",
+      "url": "https://carbontrack.dev",
+      "roles": ["Full Stack Developer", "Tech Lead"],
+      "entity": "TechSphere Inc.",
       "type": "application"
+    },
+    {
+      "name": "OpenCodeHub",
+      "description": "An open-source platform to help developers find beginner-friendly issues across GitHub repositories.",
+      "highlights": [
+        "Created a scraping pipeline to aggregate and label issues",
+        "Designed search and filter UX for easy navigation",
+        "Deployed serverless backend for cost-efficient hosting"
+      ],
+      "keywords": ["Python", "FastAPI", "Vue.js", "Serverless"],
+      "startDate": "2022-05-01",
+      "endDate": "2022-11-30",
+      "url": "https://opencodehub.org",
+      "roles": ["Backend Developer", "Project Maintainer"],
+      "entity": "Open Source Community",
+      "type": "application"
+    },
+    {
+      "name": "AI Resume Review",
+      "description": "An AI-powered tool that analyzes developer resumes and provides feedback based on industry standards.",
+      "highlights": [
+        "Built NLP pipeline to extract and analyze resume content",
+        "Integrated GPT-based feedback generation",
+        "Deployed as a self-service SaaS platform"
+      ],
+      "keywords": ["NLP", "Flask", "OpenAI API", "PostgreSQL"],
+      "startDate": "2021-09-01",
+      "endDate": "2022-04-15",
+      "url": "https://airesumereview.com",
+      "roles": ["Lead Developer", "Product Owner"],
+      "entity": "Freelance Project",
+      "type": "application"
+    },
+    {
+      "name": "ConferenceTalkFinder",
+      "description": "A platform to help developers discover tech conferences and submit CFPs (Call for Proposals).",
+      "highlights": [
+        "Built comprehensive event scraping and categorization system",
+        "Integrated Google Calendar sync for event tracking",
+        "Added AI-powered talk suggestion tool based on user expertise"
+      ],
+      "keywords": ["Django", "React", "Celery", "Elasticsearch"],
+      "startDate": "2020-03-01",
+      "endDate": "2021-01-30",
+      "url": "https://conferencetalkfinder.com",
+      "roles": ["Full Stack Developer"],
+      "entity": "Personal Project",
+      "type": "application"
+    }
+  ],
+
+  "certificates": [
+    {
+      "name": "Certified Kubernetes Administrator",
+      "date": "2023-05-15",
+      "url": "https://www.cncf.io/certification/cka/",
+      "issuer": "CNCF"
+    },
+    {
+      "name": "AWS Certified Solutions Architect – Associate",
+      "date": "2022-11-10",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect",
+      "date": "2021-08-22",
+      "url": "https://cloud.google.com/certification/cloud-architect",
+      "issuer": "Google Cloud"
     }
   ],
 
@@ -151,4 +536,3 @@
     "lastModified": "2017-12-24T15:53:00"
   }
 }
-
