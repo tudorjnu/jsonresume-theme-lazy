@@ -1,0 +1,11 @@
+if helper.isValidArray(resume.references)
+  div.section-container
+    div.section-header
+      h2 References
+      hr
+    div.margin-container-md
+      each ref in resume.references
+        p.margin-container-xs
+          strong= ref.name + ': '
+          if ref.reference
+            em= '"' + ref.reference + '"'
