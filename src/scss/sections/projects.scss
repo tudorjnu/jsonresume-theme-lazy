@@ -27,17 +27,4 @@
       margin-left: 16px;
     }
   }
-
-  p {
-    margin: 0;
-  }
-
-  a {
-    color: var(--link-color);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }

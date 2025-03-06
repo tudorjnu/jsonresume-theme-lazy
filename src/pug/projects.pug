@@ -10,7 +10,10 @@ if helper.isValidArray(resume.projects)
             = helper.formatDate(project.startDate) + ' -'
             br
             = helper.formatDate(project.endDate)
-          h3.title= project.name
+          h3.title
+            = project.name
+            if helper.isValidArray(project.keywords)
+              = ' (' + project.roles.join(', ') + ')'
           span.entity
             h3
               if project.url
@@ -23,10 +26,6 @@ if helper.isValidArray(resume.projects)
             p.keywords
               strong Keywords:
               = ' ' + project.keywords.join(', ') + '.'
-          if helper.isValidArray(project.keywords)
-            p.roles
-              strong Role(s):
-              = ' ' + project.roles.join(', ') + '.'
           if helper.isValidArray(project.highlights)
             ul.highlights
               each highlight in project.highlights

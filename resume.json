@@ -342,54 +342,18 @@
   ],
 
   "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "French",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "German",
-      "fluency": "Beginner"
-    },
-    {
-      "language": "Mandarin Chinese",
-      "fluency": "Conversational"
-    },
-    {
-      "language": "Japanese",
-      "fluency": "Beginner"
-    },
-    {
-      "language": "Arabic",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "Portuguese",
-      "fluency": "Conversational"
-    },
-    {
-      "language": "Russian",
-      "fluency": "Beginner"
-    },
-    {
-      "language": "Italian",
-      "fluency": "Conversational"
-    },
-    {
-      "language": "Hindi",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "Korean",
-      "fluency": "Beginner"
-    }
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Spanish", "fluency": "Fluent" },
+    { "language": "French", "fluency": "Intermediate" },
+    { "language": "German", "fluency": "Beginner" },
+    { "language": "Mandarin Chinese", "fluency": "Conversational" },
+    { "language": "Japanese", "fluency": "Beginner" },
+    { "language": "Arabic", "fluency": "Intermediate" },
+    { "language": "Portuguese", "fluency": "Conversational" },
+    { "language": "Russian", "fluency": "Beginner" },
+    { "language": "Italian", "fluency": "Conversational" },
+    { "language": "Hindi", "fluency": "Intermediate" },
+    { "language": "Korean", "fluency": "Beginner" }
   ],
 
   "interests": [

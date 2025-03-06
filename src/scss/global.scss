@@ -8,11 +8,10 @@ html {
 
 a {
   color: variables.$text-color;
-  font-weight: bolder;
   text-decoration: none;
 
-  &[href] {
-    text-decoration-color: color.adjust(variables.$text-color, $lightness: 40%);
+  &:hover {
+    text-decoration: underline;
   }
 }
 

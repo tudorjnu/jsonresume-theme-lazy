@@ -10,7 +10,10 @@ if helper.isValidArray(resume.education)
             = helper.formatDate(edu.startDate) + ' -'
             br
             = helper.formatDate(edu.endDate)
-          h3= edu.studyType + " in " + edu.area
+          h3
+            = edu.studyType + " in " + edu.area
+            if edu.score
+              = ' (' + edu.score + ')'
           span.institution
             h3
               a(href=edu.url)= edu.institution
