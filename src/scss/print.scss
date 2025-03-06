@@ -16,4 +16,14 @@
     break-inside: avoid;
     page-break-inside: avoid;
   }
+
+  .section-header {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .summary {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
 }
