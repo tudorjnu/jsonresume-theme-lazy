@@ -1,6 +1,6 @@
 if helper.isValidArray(resume.education)
   div.section-container
-    div.section-title
+    div.section-header
       h2 Education
       hr
     div.margin-container-md
@@ -17,9 +17,9 @@ if helper.isValidArray(resume.education)
           if edu.summary
             p.summary= edu.summary
           if helper.isValidArray(edu.courses)
-            p
+            p.course
               strong Courses:
-              = ' ' + edu.courses.join(', ')
+              = ' ' + edu.courses.join(', ') + '.'
           if helper.isValidArray(edu.highlights)
             ul.highlights
               each highlight in edu.highlights
