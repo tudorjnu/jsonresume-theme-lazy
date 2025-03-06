@@ -1,0 +1,9 @@
+if helper.isValidArray(resume.languages)
+  div.section-container
+    div.section-header
+      h2 Languages
+      hr
+    div.margin-container-sm
+      p
+        = resume.languages.map(lang => `${lang.language} (${lang.fluency})`).join(', ')
+        = "."
