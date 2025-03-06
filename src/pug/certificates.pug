@@ -1,14 +1,16 @@
 if helper.isValidArray(resume.certificates)
-  div(class='margin-container-2')
-    div(class='section')
-      h3 Certificates
+  div.section-container
+    div.section-header
+      h2 Certificates
       hr
-    div(class='container')
-      each certificate in resume.certificates
-        div(class='no-break')
-          div(class='publication-entry')
-            span(class="date")= helper.formatDate(certificate.date)
-            h4(class="title")=certificate.name
-            span(class="issuer")
-              a(href=certificate.url)=certificate.issuer
-
+    div.margin-container-xs
+      each cert in resume.certificates
+        div.certificate-entry
+          div.date
+            = helper.formatDate(cert.date)
+          h3.title
+            if cert.url
+              a(href=cert.url target="_blank" rel="noopener noreferrer")= cert.name
+            else
+              = cert.name
+          h3.issuer= cert.issuer

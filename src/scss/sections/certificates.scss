@@ -1,27 +1,30 @@
 @use "../variables";
 
-@use "sass:color";
-
 .certificate-entry {
   display: grid;
-  grid-template-columns: 100px 1fr 400px;
-  grid-template-areas:
-    "date title"
-    "date issuer";
-  font-size: variables.$font-size-base;
-  line-height: variables.$line-height-base;
+  grid-template-columns: 100px 1fr auto;
 
   .date {
     text-align: left;
-    grid-area: date;
+    grid-row: span 2;
   }
 
   .title {
-    grid-area: title;
+    margin: 0;
   }
 
   .issuer {
-    grid-area: issuer;
+    margin-left: variables.$space-md;
+    align-self: start;
     text-align: right;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
