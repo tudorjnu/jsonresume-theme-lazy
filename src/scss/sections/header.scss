@@ -3,7 +3,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  gap: 0 2rem;
+  gap: variables.$space-md;
 
   .title {
     grid-area: title;

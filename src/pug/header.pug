@@ -3,35 +3,30 @@ div.header-container
   div.title
     span.name= basics.name
     span.label= basics.label
-
   ul.profiles
-    - var { location, phone, email, website, profiles } = basics;
-
-    if location
-      li.profile
-        i.fas.fa-map-marker-alt
-        span= helper.formatLocation(location)
+    - var { location, phone, email, url, profiles } = basics;
 
     if phone
       li.profile
         i.fas.fa-phone
         a(href='tel:' + phone)= helper.formatPhone(phone)
-
+    if location
+      li.profile
+        i.fas.fa-map-marker-alt
+        span= helper.formatLocation(location)
     if email
       li.profile
         i.fas.fa-envelope
         a(href='mailto:' + email)= email
-
-    if website
+    if url
       li.profile
         i.fas.fa-globe
-        a(href=website)= helper.formatLink(website)
-
+        a(href=url)= helper.formatLink(url)
     each profile in profiles
       li.profile
         -
           var iconMap = {
-            Github: 'fab fa-github',
+            GitHub: 'fab fa-github',
             LinkedIn: 'fab fa-linkedin',
             Soundcloud: 'fab fa-soundcloud'
           };
