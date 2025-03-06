@@ -1,0 +1,27 @@
+.award-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+
+  .date {
+    text-align: left;
+    grid-row: span 10;
+  }
+
+  .awarder {
+    align-self: start;
+    text-align: right;
+  }
+
+  .summary {
+    grid-column: 2 / span 2;
+    margin: 4px 0 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,15 @@
+if helper.isValidArray(resume.awards)
+  div.section-container
+    div.section-header
+      h2 Awards
+      hr
+    div.margin-container-md
+      each award in resume.awards
+        div.award-entry
+          div.date
+            = helper.formatDate(award.date)
+          h3.title= award.title
+          span.awarder
+            h3= award.awarder
+          if award.summary
+            p.summary= award.summary
