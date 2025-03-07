@@ -1,48 +1,49 @@
 @use "../variables";
+@use "sass:color";
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  gap: variables.$space-md;
-
   .title {
-    grid-area: title;
-    align-self: start;
-    text-align: left;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: variables.$space-md;
+  }
 
-    .name {
-      font-weight: bolder;
-      font-size: variables.$font-size-5xl;
-      line-height: variables.$line-height-5xl;
-    }
+  .name {
+    font-weight: bold;
+  }
 
-    .label {
-      font-size: variables.$font-size-3xl;
-      line-height: variables.$line-height-3xl;
-      margin-top: 0.5em;
-    }
+  .label {
+    font-weight: lighter;
+    color: color.adjust(variables.$text-color, $lightness: 40%);
+  }
+
+  .separator {
+    font-weight: normal;
   }
 
   .profiles {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: variables.$space-sm variables.$space-sm;
-
-    align-items: stretch;
-    align-self: stretch;
-    grid-area: profiles;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     list-style: none;
+    padding: 0;
+    justify-content: space-between; // Center the whole list
 
-    .profile {
+    li {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
+      gap: 5px;
 
-      i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      &::after {
+        content: "•";
+        margin-left: 5px;
+      }
+
+      &:last-child::after {
+        content: ""; // No dot after the last item
       }
 
       a {
