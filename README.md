@@ -6,6 +6,25 @@ Here's an improved and more polished version of your **README.md** for the Lazy 
 
 A simple, clean theme for resumes and cover letters using the `jsonresume` format.
 
+## Example Outputs
+
+### Resume & Cover Letter (Previews)
+
+Here’s how the default resume and cover letter look when rendered using this theme:
+
+| Resume                               | Cover Letter                          |
+|--------------------------------------|--------------------------------------|
+| ![Resume Preview](./public/resume.png) | ![Cover Letter Preview](./public/cover.png) |
+
+---
+
+### PDF Outputs
+
+For reference, you can also check the actual generated PDFs:
+
+- [Resume PDF](./public/resume.pdf)
+- [Cover Letter PDF](./public/resume-cover.pdf)
+
 ---
 
 ## QuickStart
@@ -53,25 +72,6 @@ npm run export-cover render_cover.js ./resume.json ./cover.md cover.pdf
 ```bash
 npm run export-cover render_cover.js <path-to-resume.json> <path-to-cover.md> [output-path]
 ```
-
----
-
-## Example Outputs
-
-### Resume & Cover Letter (Previews)
-
-Here’s how the default resume and cover letter look when rendered using this theme:
-
-| Resume                               | Cover Letter                          |
-|--------------------------------------|--------------------------------------|
-| ![Resume Preview](./public/resume.png) | ![Cover Letter Preview](./public/cover.png) |
-
-### PDF Outputs
-
-For reference, you can also check the actual generated PDFs:
-
-- [Resume PDF](./public/resume.pdf)
-- [Cover Letter PDF](./public/resume-cover.pdf)
 
 ---
 
