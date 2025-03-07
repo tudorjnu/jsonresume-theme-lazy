@@ -31,18 +31,6 @@ html(lang="en")
             li.profile
               i.fas.fa-globe
               a(href=url)= helper.formatLink(url)
-          each profile in profiles
-            li.profile
-              -
-                var iconMap = {
-                  GitHub: 'fab fa-github',
-                  LinkedIn: 'fab fa-linkedin',
-                };
-              - var iconClass = iconMap[profile.network] || 'fas fa-link';
-
-              i(class=iconClass)
-
-              a(href=profile.url)= profile.username || profile.url.replace(/^https?:\/\//, '')
       hr
       div.cover-letter-content !{coverBody}
 
