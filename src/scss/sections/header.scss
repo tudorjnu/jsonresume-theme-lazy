@@ -54,11 +54,6 @@
       &:last-child::after {
         content: ""; // No dot after the last item
       }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
     }
   }
 }
