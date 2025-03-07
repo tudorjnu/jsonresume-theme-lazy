@@ -10,5 +10,4 @@ What draws me most to TechCorp Solutions is your reputation for innovation and y
 
 I would welcome the opportunity to further discuss how my skills, experience, and enthusiasm for software development align with the needs of your team. Thank you for your time and consideration. I look forward to the possibility of contributing to TechCorp’s continued success.
 
-Sincerely,
-John Doe
+Sincerely,<br/>John Doe
