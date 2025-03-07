@@ -6,7 +6,11 @@
     display: flex;
     align-items: baseline;
     gap: 5px;
-    font-size: 4rem;
+    font-size: clamp(
+      24px,
+      4rem,
+      64px
+    ); // Minimum 24px, grows with screen, max 64px
     line-height: 1;
     margin-bottom: variables.$space-md;
   }
