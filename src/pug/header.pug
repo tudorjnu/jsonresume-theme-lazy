@@ -4,6 +4,7 @@ div.header-container
     span.name= basics.name
     span.separator |
     span.label= basics.label
+  hr
   ul.profiles
     - var { location, phone, email, url, profiles } = basics;
 
@@ -36,3 +37,7 @@ div.header-container
         i(class=iconClass)
 
         a(href=profile.url)= profile.username || profile.url.replace(/^https?:\/\//, '')
+  if resume.basics.summary
+    hr
+    div.section-container
+      p=resume.basics.summary

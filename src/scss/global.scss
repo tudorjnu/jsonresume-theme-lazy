@@ -47,13 +47,11 @@ h4 {
 hr {
   flex-grow: 1;
   align-self: center;
-  // TODO: make this dynamic
   border-top: 2px solid colours.$neutral-700;
-  margin-left: variables.$font-size-2xl;
 }
 
 .content {
-  font-size: variables.$font-base;
+  font-size: variables.$font-size-base;
   width: variables.$content-width;
   line-height: variables.$line-height-base;
   color: colours.$neutral-900;
@@ -69,6 +67,14 @@ hr {
     display: flex;
     align-items: center;
     margin: variables.$space-md 0 variables.$space-xs 0;
+
+    hr {
+      flex-grow: 1;
+      align-self: center;
+      // TODO: make this dynamic
+      border-top: 2px solid colours.$neutral-700;
+      margin-left: variables.$font-size-2xl;
+    }
   }
 }
 

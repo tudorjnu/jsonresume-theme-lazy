@@ -2,6 +2,11 @@
 @use "sass:color";
 
 .header-container {
+  hr {
+    margin-top: variables.$space-sm;
+    margin-bottom: variables.$space-sm;
+  }
+
   .title {
     display: flex;
     align-items: baseline;
@@ -34,7 +39,7 @@
     gap: 5px;
     list-style: none;
     padding: 0;
-    justify-content: space-between; // Center the whole list
+    justify-content: space-between;
 
     li {
       display: flex;
