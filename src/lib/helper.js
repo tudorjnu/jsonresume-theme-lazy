@@ -21,12 +21,7 @@ const formatLocation = (location) => {
   if (!location) return null;
 
   const { city, countryCode } = location;
-  const country = countryCode
-    ? iso.whereAlpha2(countryCode)?.country || countryCode
-    : null;
-
-  const parts = [city, country].filter(Boolean);
-
+  const parts = [city, countryCode].filter(Boolean);
   return parts.length ? parts.join(", ") : null;
 };
 
