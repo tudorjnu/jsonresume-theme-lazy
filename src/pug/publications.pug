@@ -7,18 +7,22 @@ if helper.isValidArray(resume.publications)
       each publication in resume.publications
         div.publication-entry
           div.date= helper.formatDate(publication.releaseDate)
+          if publication.formattedCitation
+            div.title
+              != helper.mdToHtml(publication.formattedCitation)
 
-          h3.title
-            = publication.name
-            if publication.publisher
-              if publication.website
-                | , 
-                a(href=publication.website)= publication.publisher
-              else
-                | , #{publication.publisher}
+          else
+            h3.title
+              = publication.name
+              if publication.publisher
+                if publication.website
+                  | , 
+                  a(href=publication.website)= publication.publisher
+                else
+                  | , #{publication.publisher}
 
-          if publication.authors
-            div.authors!= helper.mdToHtml(publication.authors)
+            if publication.authors
+              div.authors!= helper.mdToHtml(publication.authors)
 
           if publication.summary
             div.summary!= helper.mdToHtml(publication.summary)
