@@ -1,23 +1,36 @@
 import { promises as fs } from "fs";
 import puppeteer from "puppeteer";
 import path from "path";
-import { render } from "../src/index.js";
+import pug from "pug";
+import { marked } from "marked";
+import helper from "../src/lib/helper.js";
 
 async function main() {
   const resumeJsonFile = process.argv[2];
+  const coverMarkdownFile = process.argv[3];
   const outputPdfFile =
-    process.argv[3] || replaceExtension(resumeJsonFile, ".pdf");
+    process.argv[4] || replaceExtension(resumeJsonFile, "-cover.pdf");
 
-  if (!resumeJsonFile) {
+  if (!resumeJsonFile || !coverMarkdownFile) {
     console.error(
-      "Usage: node render-resume.js <path-to-resume.json> [output-path]",
+      "Usage: node render_cover.js <path-to-resume.json> [output-path] <path-to-cover.md>",
     );
     process.exit(1);
   }
 
+  // Read and parse resume and cover markdown
   const resume = JSON.parse(await fs.readFile(resumeJsonFile, "utf-8"));
-  const html = await render(resume);
+  const coverMarkdown = await fs.readFile(coverMarkdownFile, "utf-8");
+  const coverHtml = marked.parse(coverMarkdown);
 
+  // Render Pug template directly
+  const html = pug.renderFile("src/cover.pug", {
+    resume,
+    helper,
+    coverBody: coverHtml,
+  });
+
+  // Generate PDF using Puppeteer
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
@@ -25,7 +38,7 @@ async function main() {
   await page.pdf({ path: outputPdfFile, format: "a4", printBackground: true });
 
   await browser.close();
-  console.log(`✅ PDF saved as ${outputPdfFile}`);
+  console.log(`✅ Cover letter PDF saved as ${outputPdfFile}`);
 }
 
 function replaceExtension(filePath, newExt) {

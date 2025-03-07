@@ -1,20 +1,17 @@
 {
   "name": "jsonresume-theme-lazy",
-  "main": "index.js",
+  "main": "src/index.js",
   "files": [
-    "/src/",
-    "index.js"
+    "./src/index.js"
   ],
   "version": "1.0.0",
   "description": "A jsonresume-theme.",
   "scripts": {
-    "create-pdf": "resume export resumes-pdf/resume_front_end.pdf --format pdf --theme . --resume ./resumes/web_dev.json",
-    "export-resume": "node ./scripts/export-resume.js",
-    "create-docs": "resume export docs/resume_extended.pdf --resume public/resume_extended.json --format pdf --theme . && resume export docs/resume_simple.pdf --resume public/resume_simple.json --format pdf --theme .",
-    "validate": "resume test",
-    "test": "jest",
+    "validate": "resumed validate",
     "gulp-resume": "gulp --gulpfile gulpfile-resume.js",
-    "gulp-cover": "gulp --gulpfile gulpfile-cover.js"
+    "gulp-cover": "gulp --gulpfile gulpfile-cover.js",
+    "export-resume": "node ./scripts/export-resume.js",
+    "export-cover": "node ./scripts/export-cover.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +43,8 @@
     "marked": "^15.0.7",
     "moment": "^2.30.1",
     "pug": "^3.0.3",
+    "puppeteer": "^24.4.0",
+    "resumed": "^4.1.0",
     "yargs": "^17.7.2"
   }
 }
