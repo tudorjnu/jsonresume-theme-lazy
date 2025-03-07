@@ -53,8 +53,8 @@ hr {
 }
 
 .content {
+  font-size: variables.$font-base;
   width: variables.$content-width;
-  font-size: variables.$font-size-base;
   line-height: variables.$line-height-base;
   color: colours.$neutral-900;
   height: auto;
