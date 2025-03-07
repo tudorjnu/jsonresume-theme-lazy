@@ -1,7 +1,3 @@
-Here's an improved and more polished version of your **README.md** for the Lazy Resume Theme, with better structure, clearer explanations, and embedded references to `./public/resume.pdf` and `./public/resume-cover.pdf`. It also includes side-by-side previews for the resume and cover letter images.
-
----
-
 # Lazy Resume Theme for `jsonresume` Format
 
 A simple, clean theme for resumes and cover letters using the `jsonresume` format.
