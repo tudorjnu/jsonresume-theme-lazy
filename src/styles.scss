@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@use "scss/colours.scss";
 @use "scss/variables.scss";
 @use "scss/normalize.scss";
 @use "scss/global";
@@ -14,4 +15,4 @@
 @use "scss/sections/projects";
 @use "scss/sections/certificates";
 @use "scss/sections/awards";
-@use "scss/cover_letter";
+@use "scss/cover_letter.scss";

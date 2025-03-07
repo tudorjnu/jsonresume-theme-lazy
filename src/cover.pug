@@ -5,22 +5,24 @@ html(lang="en")
     title=`Cover Letter – ${resume.basics.name}`
   body
     div.content.cover
-      div.cover-header-container
+      div.header-container
         - var basics = resume.basics
         div.title
           span.name= basics.name
+          span.separator |
           span.label= basics.label
+        hr
         ul.profiles
           - var { location, phone, email, url, profiles } = basics;
 
-          if phone
-            li.profile
-              i.fas.fa-phone
-              a(href='tel:' + phone)= helper.formatPhone(phone)
           if location
             li.profile
               i.fas.fa-map-marker-alt
               span= helper.formatLocation(location)
+          if phone
+            li.profile
+              i.fas.fa-phone
+              a(href='tel:' + phone)= helper.formatPhone(phone)
           if email
             li.profile
               i.fas.fa-envelope
@@ -37,11 +39,11 @@ html(lang="en")
                   LinkedIn: 'fab fa-linkedin',
                   Soundcloud: 'fab fa-soundcloud'
                 };
-
               - var iconClass = iconMap[profile.network] || 'fas fa-link';
 
               i(class=iconClass)
-              a(href=profile.url)= profile.url.replace(/^https?:\/\//, '')
+
+              a(href=profile.url)= profile.username || profile.url.replace(/^https?:\/\//, '')
       hr
       div.cover-letter-content !{coverBody}
 

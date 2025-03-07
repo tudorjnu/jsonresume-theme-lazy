@@ -1,13 +1,9 @@
-@use "./variables.scss";
+@use "variables.scss";
 
 .cover {
-  font-size: variables.$font-size-2xl;
-
   hr {
     margin-left: 0;
   }
-
-  line-height: 1.6;
 
   p {
     margin: 0 0 variables.$space-lg;
@@ -18,20 +14,15 @@
     font-weight: 700;
   }
 
-  a {
-    color: #0073e6;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   h1,
   h2,
   h3 {
     margin: 1rem 0 0.5rem;
     font-weight: 700;
+  }
+
+  i {
+    font-size: 1rem;
   }
 
   ul,
@@ -50,57 +41,12 @@
     font-style: italic;
     color: #555;
   }
-}
 
-.cover-header-container {
-  display: flex;
-  justify-content: space-between;
-  gap: variables.$space-md;
+  font-size: variables.$font-size-2xl;
+  line-height: 1.6;
 
-  .title {
-    grid-area: title;
-    align-self: start;
-    text-align: left;
-
-    .name {
-      font-weight: bolder;
-      font-size: variables.$font-size-5xl;
-      line-height: variables.$line-height-5xl;
-    }
-
-    .label {
-      font-size: variables.$font-size-3xl;
-      line-height: variables.$line-height-3xl;
-      margin-top: 0.5em;
-    }
-  }
-
-  .profiles {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: variables.$space-sm variables.$space-sm;
-
-    align-items: stretch;
-    align-self: stretch;
-    grid-area: profiles;
-    list-style: none;
-
-    .profile {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
-
-      i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
+  .cover-letter-content {
+    max-width: 80ch;
+    padding: 2rem;
   }
 }
