@@ -1,4 +1,3 @@
-@use "mixins";
 @use "variables";
 
 .margin-container-xs > *:not(:first-child) {
@@ -19,14 +18,6 @@
 
 .margin-container-xl > *:not(:first-child) {
   margin-top: variables.$space-xl;
-}
-
-.no-alone-1 {
-  @include mixins.no-alone(75px);
-}
-
-.no-alone-2 {
-  @include mixins.no-alone(150px);
 }
 
 .text-xs {

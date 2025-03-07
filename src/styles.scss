@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
-@use "scss/normalize";
-@use "scss/colours";
-@use "scss/variables";
-@use "scss/mixins";
+@use "scss/variables.scss";
+@use "scss/normalize.scss";
 @use "scss/global";
 @use "scss/utils";
 @use "scss/print";
