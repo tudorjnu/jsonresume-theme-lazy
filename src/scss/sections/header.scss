@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colours";
 @use "sass:color";
 
 .header-container {
@@ -11,11 +12,7 @@
     display: flex;
     align-items: baseline;
     gap: 5px;
-    font-size: clamp(
-      24px,
-      4rem,
-      64px
-    ); // Minimum 24px, grows with screen, max 64px
+    font-size: clamp(24px, 4rem, 64px);
     line-height: 1;
     margin-bottom: variables.$space-md;
   }
@@ -24,13 +21,10 @@
     font-weight: bold;
   }
 
-  .label {
-    font-weight: lighter;
-    color: color.adjust(variables.$text-color, $lightness: 40%);
-  }
-
+  .label,
   .separator {
     font-weight: normal;
+    color: colours.$neutral-700;
   }
 
   .profiles {
@@ -44,15 +38,15 @@
     li {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: variables.$space-sm;
 
       &::after {
         content: "•";
-        margin-left: 5px;
+        margin-left: variables.$space-xs;
       }
 
       &:last-child::after {
-        content: ""; // No dot after the last item
+        content: "";
       }
     }
   }

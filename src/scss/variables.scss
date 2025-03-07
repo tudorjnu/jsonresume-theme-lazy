@@ -4,7 +4,8 @@
 // Base space unit — this is the core
 $space-base: 8px;
 $font-size: 12pt;
-$text-color: colours.$neutral-950;
+$text-color: colours.$neutral-900;
+$text-color-lighter: colours.$neutral-800;
 
 // space Scale (derived from the base)
 $space-xs: math.div($space-base, 2); // 4px
