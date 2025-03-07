@@ -1,6 +1,5 @@
-@use "../variables";
 @use "../colours";
-@use "sass:color";
+@use "../variables";
 
 .header-container {
   hr {
@@ -33,7 +32,7 @@
     gap: 5px;
     list-style: none;
     padding: 0;
-    justify-content: space-between;
+    justify-content: space-around;
 
     li {
       display: flex;
