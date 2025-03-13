@@ -13,7 +13,10 @@ if helper.isValidArray(resume.work)
           h3.title= vol.position
           span.company
             h3
-              a(href=vol.url)= vol.organization
+              if vol.url
+                a(href=vol.url)= vol.organization
+              else
+                = vol.organization
           if vol.summary
             p.summary= vol.summary
           if helper.isValidArray(vol.highlights)

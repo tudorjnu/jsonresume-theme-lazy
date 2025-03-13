@@ -3,7 +3,7 @@
 
 // Base space unit — this is the core
 $space-base: 8px;
-$font-size: 12pt;
+$font-size: 12.8pt;
 $text-color: colours.$neutral-900;
 $text-color-lighter: colours.$neutral-800;
 
@@ -17,7 +17,7 @@ $space-2xl: $space-base * 6; // 48px
 $space-3xl: $space-base * 8; // 64px
 
 // Font Sizes (a clean scale — can tweak the base if needed)
-$font-size-base: 1rem; // 16px
+$font-size-base: 1rem;
 $font-size-xs: 0.75rem; // 12px
 $font-size-sm: 0.875rem; // 14px
 $font-size-lg: 1.125rem; // 18px

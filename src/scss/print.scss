@@ -1,4 +1,7 @@
 @use "variables";
+@use "colours.scss";
+@use "sass:color";
+@use "sass:math";
 
 @page {
   size: A4;
@@ -20,5 +23,16 @@
   .section-header {
     break-after: avoid;
     page-break-after: avoid;
+  }
+
+  .section-container :where(*) {
+    a {
+      color: inherit;
+      // font-style: italic;
+      // font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1px;
+    }
   }
 }

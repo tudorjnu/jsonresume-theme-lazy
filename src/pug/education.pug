@@ -16,9 +16,12 @@ if helper.isValidArray(resume.education)
               = ' (' + edu.score + ')'
           span.institution
             h3
-              a(href=edu.url)= edu.institution
+              if edu.url
+                a(href=edu.url)= edu.institution
+              else
+                = edu.institution
           if edu.summary
-            p.summary= edu.summary
+            div.summary!= helper.mdToHtml(edu.summary)
           if helper.isValidArray(edu.courses)
             p.course
               strong Courses:
