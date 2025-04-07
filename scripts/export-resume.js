@@ -1,7 +1,7 @@
-import { promises as fs } from "fs";
-import puppeteer from "puppeteer";
-import path from "path";
-import { render } from "../src/index.js";
+const fs = require("fs").promises;
+const puppeteer = require("puppeteer");
+const path = require("path");
+const { render } = require("../src/index");
 
 async function main() {
   const resumeJsonFile = process.argv[2];

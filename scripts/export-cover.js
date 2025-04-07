@@ -1,9 +1,9 @@
-import { promises as fs } from "fs";
-import puppeteer from "puppeteer";
-import path from "path";
-import pug from "pug";
-import { marked } from "marked";
-import helper from "../src/lib/helper.js";
+const fs = require("fs").promises;
+const puppeteer = require("puppeteer");
+const path = require("path");
+const pug = require("pug");
+const { marked } = require("marked");
+const helper = require("../src/lib/helper");
 
 async function main() {
   const resumeJsonFile = process.argv[2];
@@ -13,12 +13,12 @@ async function main() {
 
   if (!resumeJsonFile || !coverMarkdownFile) {
     console.error(
-      "Usage: node render_cover.js <path-to-resume.json> [output-path] <path-to-cover.md>",
+      "Usage: node render_cover.js <path-to-resume.json> <path-to-cover.md> [output-path]",
     );
     process.exit(1);
   }
 
-  // Read and parse resume and cover markdown
+  // Read and parse resume and cover Markdown
   const resume = JSON.parse(await fs.readFile(resumeJsonFile, "utf-8"));
   const coverMarkdown = await fs.readFile(coverMarkdownFile, "utf-8");
   const coverHtml = marked.parse(coverMarkdown);
