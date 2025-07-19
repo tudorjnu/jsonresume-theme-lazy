@@ -1,29 +1,29 @@
 @page {
-	size: A4;
-	margin: 15mm 0 20mm 0;
+  size: A4;
+  margin: 15mm 0 20mm 0;
 }
 
 @media not print {
-	body {
-		margin: var(--space-md) 0 var(--space-md) 0;
-	}
+  body {
+    margin: var(--space-md) 0 var(--space-md) 0;
+  }
 }
 
 @media print {
-	.no-break {
-		break-inside: avoid;
-		page-break-inside: avoid;
-	}
+  .no-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
 
-	.section-header {
-		break-after: avoid;
-		page-break-after: avoid;
-	}
+  .section-header {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
 
-	.section-container :where(*) a {
-		color: inherit;
-		text-decoration: underline;
-		text-underline-offset: 2px;
-		text-decoration-thickness: 1px;
-	}
+  .section-container :where(*) a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
 }
