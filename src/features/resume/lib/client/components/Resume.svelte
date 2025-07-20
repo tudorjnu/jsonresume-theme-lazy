@@ -19,7 +19,7 @@
 </script>
 
 <div class="content">
-  <Basics {...resume.basics} />
+  <Basics basics={resume.basics} />
   <Skill skillItems={resume.skills} />
   <Work workItems={resume.work} />
   <Education educationItems={resume.education} />
