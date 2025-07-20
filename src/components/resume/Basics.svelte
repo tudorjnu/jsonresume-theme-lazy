@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { formatLocation, formatPhone } from '../lib/index.ts';
+  import { formatLocation, formatPhone } from '@/lib';
   let { name, label, email, phone, url, summary, location, profiles } = $props();
 
   const iconMap = {

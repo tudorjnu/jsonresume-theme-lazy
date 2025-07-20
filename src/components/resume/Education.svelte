@@ -1,6 +1,6 @@
 <script lang="ts">
   import SectionHeader from './SectionHeader.svelte';
-  import { mdToHtml, formatDate } from '../lib/index.ts';
+  import { mdToHtml, formatDate } from '@/lib';
   let { educationItems } = $props();
 </script>
 
